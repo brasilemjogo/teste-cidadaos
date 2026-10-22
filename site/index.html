@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#124731">
+  <meta name="description" content="Escolha um tema e faça o teste: impostos, segurança pública e direitos das mulheres. Suas respostas ficam apenas no seu navegador.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Em jogo · Escolha um tema</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Em jogo, início"><span class="brand-mark" aria-hidden="true">e<span>j</span></span><span>EM JOGO<small>UMA PAUSA PARA PENSAR</small></span></a>
+    <button class="privacy-pill" data-action="privacy"><svg class="icon" aria-hidden="true"><use href="./assets/icons.svg#lock"/></svg><span>Suas respostas ficam com você</span></button>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><span>Leia. Responda. Conheça o tema.</span><button data-action="privacy">Privacidade e dados</button></footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-body"></div><button class="dialog-close" data-action="close" aria-label="Fechar janela">×</button></dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <noscript><p class="noscript">Ative o JavaScript para responder. Todas as respostas são processadas apenas no seu navegador.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "testes-cidadaos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Três questionários estáticos com respostas apenas no navegador.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
