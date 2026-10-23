@@ -142,6 +142,42 @@ window.QUIZZES = [
             "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
         ]
+      },
+      {
+        "label": "Implementação da reforma · Emenda Constitucional 132/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Sancionou a LC 214/2025, que regulamenta a reforma tributária sobre o consumo, dando continuidade à sua implementação.",
+            "source": "Câmara dos Deputados · Sanção da regulamentação",
+            "url": "https://www.camara.leg.br/noticias/1127237-regulamentacao-da-reforma-tributaria-e-sancionada-conheca-a-nova-lei/"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Em declaração noticiada em junho de 2026, afirmou que, se eleito, suspenderia a entrada em vigor da reforma, para formular novas regras.",
+            "source": "InfoMoney / Estadão Conteúdo · Proposta de suspensão",
+            "url": "https://www.infomoney.com.br/politica/vamos-suspender-por-um-ano-a-entrada-da-reforma-tributaria-diz-flavio-bolsonaro/"
+          }
+        ]
+      },
+      {
+        "label": "Isenção do IR e tributação de altas rendas · Lei 15.270/2025",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Seu governo apresentou a proposta e ele sancionou a Lei 15.270/2025, que amplia a isenção para rendimentos de até R$ 5 mil mensais e estabelece tributação mínima para altas rendas, conforme os critérios da lei.",
+            "source": "Senado Federal · Sanção da isenção do IR",
+            "url": "https://www12.senado.leg.br/noticias/materias/2025/11/27/sancionada-isencao-do-imposto-de-renda-para-quem-ganha-ate-r-5-mil-por-mes"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "O senador Flávio Bolsonaro afirmou que a isenção no Imposto de Renda, prevista para 2026, não deveria acontecer agora.",
+            "source": "Crítica de Flávio Bolsonaro à isenção do IR · YouTube",
+            "url": "https://www.youtube.com/watch?v=TTa6JVqwGKU"
+          }
+        ]
       }
     ],
     comparison: [
@@ -170,7 +206,8 @@ window.QUIZZES = [
         title: 'Cesta básica e devolução de tributos', label: 'Regulamentação',
         text: 'A Lei Complementar 214/2025 trata da cesta básica nacional com alíquota zero e da devolução de tributos a famílias que atendam aos critérios legais. A aplicação depende das regras e do cronograma previstos na legislação.',
         source: 'Câmara dos Deputados · Regulamentação da reforma', url: 'https://www.camara.leg.br/noticias/1127237-regulamentacao-da-reforma-tributaria-e-sancionada-conheca-a-nova-lei/'
-      }
+      },
+      
     ]
   },
   {
@@ -301,7 +338,16 @@ window.QUIZZES = [
       'Empresas grandes deveriam ser obrigadas a mostrar se pagam diferente para homens e mulheres, e a corrigir se pagarem?',
       'Muita mãe deixa de trabalhar ou estudar porque não tem com quem deixar o filho. O governo deveria abrir mais creches e escolas em tempo integral, espaços para deixar as crianças enquanto a mãe trabalha ou estuda, e lavanderias comunitárias, para aliviar quem cuida da casa?',
       'Quando uma mulher é assassinada pelo companheiro, os filhos muitas vezes ficam sem nada. Essas crianças, se forem pobres (família com renda de até R$ 405 por pessoa), deveriam receber um salário mínimo por mês até os 18 anos?',
-      'A casa do Minha Casa Minha Vida deveria ficar no nome da mulher, e continuar com ela se o casal se separar?'
+      'A casa do Minha Casa Minha Vida deveria ficar no nome da mulher, e continuar com ela se o casal se separar?',
+      'Quem trabalha deveria ter dois dias de folga por semana, sem redução de salário?',
+      'O governo deveria abrir mais creches públicas, em vez de oferecer um vale para pagar creche particular?',
+      'Servidoras públicas deveriam ter seis meses de licença-maternidade, em vez de quatro?',
+      'O pai deveria ter mais dias de licença quando o bebê nasce, para dividir os cuidados com a mãe?',
+      'Quem mata uma mulher por ela ser mulher deveria receber pena de 20 a 40 anos de prisão?',
+      'Uma mulher que denuncia violência deveria receber proteção da Justiça sem precisar esperar um processo ou registrar boletim de ocorrência?',
+      'Um policial acusado de violência doméstica deveria poder ter o porte de arma suspenso enquanto o caso é analisado?',
+      'Bares, baladas e shows deveriam ter pessoas treinadas para ajudar mulheres em casos de assédio?',
+      'Lojas deveriam ser multadas por vender cartões-postais com mulheres seminuas junto de pontos turísticos?'
     ],
     questionSources: [
       {
@@ -327,6 +373,42 @@ window.QUIZZES = [
       {
         "label": "Minha Casa Minha Vida · Lei 14.620/2023",
         "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm"
+      },
+      {
+        "label": "Jornada de trabalho e dias de descanso · Senado Federal",
+        "url": "https://www12.senado.leg.br/noticias/materias/2026/05/28/rogerio-marinho-propoe-pec-que-flexibiliza-jornada-de-trabalho"
+      },
+      {
+        "label": "Creches e educação infantil pública · Lei de Diretrizes e Bases",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm"
+      },
+      {
+        "label": "Prorrogação da licença-maternidade e administração pública · Lei 11.770/2008",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11770.htm"
+      },
+      {
+        "label": "Ampliação da licença-paternidade · Lei 15.371/2026",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15371.htm"
+      },
+      {
+        "label": "Pena para feminicídio · Lei 14.994/2024",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14994.htm"
+      },
+      {
+        "label": "Medidas protetivas de urgência · Lei 14.550/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14550.htm"
+      },
+      {
+        "label": "Suspensão da posse ou restrição do porte de armas · Lei Maria da Penha, art. 22",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm"
+      },
+      {
+        "label": "Proteção em bares, casas noturnas e shows · Lei Não é Não",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14786.htm"
+      },
+      {
+        "label": "Cartões-postais e turismo sexual · Reportagem sobre a votação na Alerj",
+        "url": "https://www.brasildefato.com.br/2026/10/20/licenca-maternidade-turismo-sexual-e-violencia-domestica-tres-vezes-que-flavio-bolsonaro-votou-contra-projetos-de-protecao-a-mulher/"
       }
     ],
     comparison: [
