@@ -12,8 +12,8 @@ window.QUIZZES = [
       'Remédios, escola e tratamento de saúde deveriam pagar menos imposto que o resto?',
       'Você acha que cigarro, bebida alcoólica e refrigerante deveriam pagar um imposto extra, por fazerem mal à saúde?',
       'Hoje quem tem carro paga IPVA, mas quem tem jatinho ou iate não paga. Você acha que eles também deveriam pagar?',
-      'Os estados vivem numa briga, dando desconto de imposto para roubar empresas uns dos outros. Você acha que essa briga deveria acabar?',
-      'A reforma tributária deveria entrar em vigor como foi aprovada, sem ser suspensa nem revogada?',
+      'Para atrair empresas, um estado oferece mais desconto de imposto que o outro. Com isso, os estados podem arrecadar menos para serviços como saúde e educação. Você acha que essa disputa deveria acabar?',
+      'As mudanças nos impostos, incluindo tirar os impostos dos alimentos da cesta básica, deveriam começar nas datas previstas, sem adiar?',
       'Quem ganha até R$ 5 mil por mês deveria ficar sem pagar Imposto de Renda, com um imposto mínimo para quem ganha mais de R$ 50 mil por mês?'
     ],
     questionSources: [
@@ -219,7 +219,7 @@ window.QUIZZES = [
       'As polícias federal, estaduais e municipais deveriam trabalhar juntas e trocar informações, como o SUS faz com os hospitais do país?',
       'Tem facção que age em vários estados e fora do Brasil. A Polícia Federal deveria ter mais poder para ir atrás delas?',
       'Droga e arma chegam também de barco e de trem. A Polícia Rodoviária Federal deveria fiscalizar também rios e trilhos?',
-      'Quando falta dinheiro, o governo pode bloquear a verba da segurança. A da saúde e a da educação têm proteção na Constituição. O dinheiro da segurança também deveria ser proibido de bloquear?',
+      'Quando falta dinheiro, o governo pode bloquear a verba da segurança. A da saúde e a da educação têm proteção na Constituição. O dinheiro da segurança também deveria ser proibido de ser bloqueado?',
       'O Brasil ganha muito dinheiro com as reservas de petróleo (pré-sal). Uma parte desse dinheiro deveria ir para a segurança?',
       'A sua cidade deveria poder ter uma polícia própria, para cuidar do seu bairro?',
       'Chefe de facção deveria ficar em presídio de segurança máxima, com regras mais duras para sair mais cedo e perder os bens do crime?',
