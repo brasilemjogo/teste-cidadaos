@@ -19,10 +19,10 @@ for (const quiz of quizzes) {
       assert.deepEqual(Array.from(reference.positions, item => item.name), ['Lula', 'Flávio Bolsonaro']);
       for (const item of reference.positions) {
         assert.ok(item.text && item.source);
-        assert.match(item.url, /^https:\/\/(?:www\d*\.|legis\.)?(?:planalto\.gov\.br|senado\.leg\.br|tse\.jus\.br)\//);
+        assert.match(item.url, /^https:\/\/(?:www\d*\.|legis\.)?(?:planalto\.gov\.br|senado\.leg\.br|tse\.jus\.br|camara\.leg\.br|infomoney\.com\.br|youtube\.com)\//);
       }
     }
-    assert.match(reference.url, /^https:\/\/(?:www\d*\.)?(?:gov\.br|planalto\.gov\.br|senado\.leg\.br|camara\.leg\.br)\//);
+    assert.match(reference.url, /^https:\/\/(?:www\d*\.)?(?:gov\.br|planalto\.gov\.br|senado\.leg\.br|camara\.leg\.br|brasildefato\.com\.br)\//);
   }
   assert.deepEqual(Array.from(quiz.comparison, item => item.name), ['Lula', 'Flávio Bolsonaro']);
   for (const item of quiz.comparison) {
@@ -40,4 +40,4 @@ assert.doesNotMatch(html, /(?:src|href)="https?:\/\//);
 const js = await readFile(new URL('app.js', root), 'utf8');
 assert.doesNotMatch(js, /\b(?:fetch|XMLHttpRequest|WebSocket|sendBeacon)\b/);
 for (const file of ['styles.css', 'assets/favicon.svg', 'assets/icons.svg', '.nojekyll']) await readFile(new URL(file, root));
-console.log('OK: 3 testes, 21 perguntas + 1 extra, fontes, sintaxe, caminhos e ausência de envio de respostas.');
+console.log('OK: 3 testes, 32 perguntas + 1 extra, fontes, sintaxe, caminhos e ausência de envio de respostas.');

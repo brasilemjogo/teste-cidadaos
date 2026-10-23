@@ -124,6 +124,48 @@ window.QUIZ_CONTEXT = {
           }
         ],
         "origin": 69
+      },
+      {
+        "title": "Suspender ou revogar a reforma",
+        "paragraphs": [
+          "Em 15/06/2026, num evento da Veja, Flávio prometeu revogar a reforma como primeiro ato de governo."
+        ],
+        "sources": [
+          {
+            "label": "Gazeta do Povo",
+            "url": "https://www.gazetadopovo.com.br/eleicoes/2026/flavio-promete-fim-da-reeleicao-e-revogacao-da-reforma-tributaria-como-1o-ato-de-mandato/"
+          },
+          {
+            "label": "CNN Brasil",
+            "url": "https://www.cnnbrasil.com.br/politica/flavio-quer-suspender-reforma-tributaria-por-um-ano-e-rever-excecoes/"
+          },
+          {
+            "label": "InfoMoney",
+            "url": "https://www.infomoney.com.br/politica/vamos-suspender-por-um-ano-a-entrada-da-reforma-tributaria-diz-flavio-bolsonaro/"
+          },
+          {
+            "label": "Proposta de suspensão noticiada em maio · CNN Brasil",
+            "url": "https://www.cnnbrasil.com.br/politica/flavio-quer-suspender-reforma-tributaria-por-um-ano-e-rever-excecoes/"
+          }
+        ],
+        "origin": 70
+      },
+      {
+        "title": "Imposto de renda zero até R$ 5 mil",
+        "paragraphs": [
+          "O governo Lula enviou a proposta, que cumpre uma promessa de campanha. Ela vale desde 2026: quem ganha até R$ 5 mil por mês não paga, e quem ganha até R$ 7.350 paga menos. Quem ganha mais de R$ 600 mil por ano passa a pagar um imposto mínimo. O Senado aprovou por unanimidade, então não há voto contra do Flávio."
+        ],
+        "sources": [
+          {
+            "label": "CNN Brasil",
+            "url": "https://www.cnnbrasil.com.br/politica/por-unanimidade-senado-aprova-isencao-do-ir-para-quem-ganha-ate-r-5-mil/"
+          },
+          {
+            "label": "Senado Notícias",
+            "url": "https://www12.senado.leg.br/noticias/materias/2025/11/05/isencao-de-ir-para-quem-ganha-ate-r-5-mil-segue-para-sancao"
+          }
+        ],
+        "origin": 71
       }
     ],
     "more": [
@@ -528,6 +570,155 @@ window.QUIZ_CONTEXT = {
           }
         ],
         "origin": 98
+      },
+      {
+        "title": "Fim da escala 6x1",
+        "paragraphs": [
+          "A PEC 221, que o governo apoia, reduz a jornada de 44 para 40 horas, com 2 folgas pagas e sem corte de salário. Já foi aprovada na Câmara."
+        ],
+        "sources": [
+          {
+            "label": "IHU Unisinos",
+            "url": "https://www.ihu.unisinos.br/672000-pec-6x1-o-que-defendem-lula-e-flavio-bolsonaro"
+          },
+          {
+            "label": "Fonte oficial sobre a jornada · Senado",
+            "url": "https://www12.senado.leg.br/noticias/materias/2026/05/28/rogerio-marinho-propoe-pec-que-flexibiliza-jornada-de-trabalho"
+          },
+          {
+            "label": "Promulgação e transição · Ministério do Trabalho",
+            "url": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/outubro/congresso-nacional-promulga-pec-que-reduz-jornada-de-trabalho-e-estabelece-dois-dias-de-descanso-remunerado"
+          }
+        ],
+        "origin": 87,
+        "status": "Mudança promulgada pelo Congresso"
+      },
+      {
+        "title": "Creche pública e vale-creche",
+        "paragraphs": [
+          "A pergunta compara a ampliação da rede pública com o uso de um vale para pagar uma vaga particular. O plano de Flávio apresentado ao TSE prevê ampliar as creches e usar o vale temporariamente onde faltar vaga pública, até que ela seja oferecida. Portanto, a proposta reúne as duas medidas."
+        ],
+        "sources": [
+          {
+            "label": "Plano apresentado ao TSE · Educação infantil",
+            "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=22"
+          },
+          {
+            "label": "Educação infantil · Lei de Diretrizes e Bases",
+            "url": "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm"
+          }
+        ]
+      },
+      {
+        "title": "Licença-maternidade de 6 meses",
+        "paragraphs": [
+          "Em 2009, como deputado estadual no Rio, Flávio foi o único a votar contra ampliar de 4 para 6 meses a licença das servidoras."
+        ],
+        "sources": [
+          {
+            "label": "Metrópoles",
+            "url": "https://www.metropoles.com/colunas/matheus-leitao/tres-historias-por-tras-das-perguntas-de-lula-a-flavio-sobre-mulheres"
+          },
+          {
+            "label": "A Crítica (Agência Estado)",
+            "url": "https://acritica.net/politica/debate-lula-flavio-licenca-maternidade-2009-alerj/"
+          }
+        ],
+        "origin": 90,
+        "status": "Votação histórica na Alerj"
+      },
+      {
+        "title": "Licença-paternidade",
+        "paragraphs": [
+          "Lula sancionou a lei em 31/3/2026. A licença sobe de 5 para 10 dias em 2027, 15 em 2028 e 20 em 2029."
+        ],
+        "sources": [
+          {
+            "label": "Congresso em Foco",
+            "url": "https://www.congressoemfoco.com.br/noticia/117746/lula-sanciona-lei-que-aumenta-a-licenca-paternidade-para-20-dias"
+          },
+          {
+            "label": "Lei sancionada e calendário · Ministério das Mulheres",
+            "url": "https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/marco/presidente-lula-sanciona-lei-que-amplia-a-licenca-paternidade-para-20-dias-e-cria-o-salario-paternidade"
+          }
+        ],
+        "origin": 91,
+        "status": "Implementação gradual a partir de 2027"
+      },
+      {
+        "title": "Feminicídio com pena de até 40 anos",
+        "paragraphs": [
+          "É a Lei 14.994/2024, sancionada por Lula sem vetos. O feminicídio virou um crime próprio, com pena de 20 a 40 anos. O agressor também perde a guarda dos filhos e não pode assumir cargo público."
+        ],
+        "sources": [
+          {
+            "label": "IHU Unisinos",
+            "url": "https://ihu.unisinos.br/644713-sancionada-lei-que-pune-feminicidio-com-ate-40-anos-de-reclusao"
+          },
+          {
+            "label": "Texto da Lei 14.994/2024 · Planalto",
+            "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14994.htm"
+          }
+        ],
+        "origin": 93,
+        "status": "Lei sancionada"
+      },
+      {
+        "title": "Proteção na hora",
+        "paragraphs": [
+          "É a Lei 14.550/2023, de um projeto da Simone Tebet sancionado por Lula. A medida protetiva sai sem precisar de processo, inquérito nem boletim de ocorrência, e vale enquanto houver risco."
+        ],
+        "sources": [
+          {
+            "label": "Senado Notícias",
+            "url": "https://www12.senado.leg.br/noticias/materias/2023/04/20/nova-lei-determina-protecao-imediata-a-mulher-que-denuncia-violencia"
+          }
+        ],
+        "origin": 94,
+        "status": "Lei sancionada"
+      },
+      {
+        "title": "Armas e violência doméstica",
+        "paragraphs": [
+          "A Lei Maria da Penha permite que a Justiça suspenda a posse ou restrinja o porte de armas como medida de proteção, inclusive no caso de agentes de segurança. É uma medida para reduzir o risco à vítima enquanto o caso é analisado.",
+          "Segundo reportagem do Brasil de Fato, Flávio se manifestou contra uma proposta estadual sobre o tema em 2009, alegando presunção de inocência. A votação foi simbólica: esse registro não deve ser apresentado como um voto nominal."
+        ],
+        "sources": [
+          {
+            "label": "Lei Maria da Penha · Art. 22",
+            "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm"
+          },
+          {
+            "label": "Brasil de Fato · Discussão na Alerj",
+            "url": "https://www.brasildefato.com.br/2026/10/20/licenca-maternidade-turismo-sexual-e-violencia-domestica-tres-vezes-que-flavio-bolsonaro-votou-contra-projetos-de-protecao-a-mulher/"
+          }
+        ]
+      },
+      {
+        "title": "\"Não é Não\"",
+        "paragraphs": [
+          "É a Lei 14.786/2023, sancionada por Lula. Bares, baladas e shows têm que afastar o agressor, acompanhar a mulher até o transporte, chamar a polícia e entregar as imagens das câmeras."
+        ],
+        "sources": [
+          {
+            "label": "Poder360",
+            "url": "https://www.poder360.com.br/governo/lula-sanciona-lei-que-protege-mulheres-de-violencia-em-bares-e-shows/"
+          }
+        ],
+        "origin": 96,
+        "status": "Lei sancionada"
+      },
+      {
+        "title": "Cartões-postais e turismo sexual",
+        "paragraphs": [
+          "Segundo reportagem do Brasil de Fato, a Alerj aprovou em 2006, por 37 votos a 1, multas para estabelecimentos que vendessem cartões-postais associando mulheres seminuas a pontos turísticos. Flávio foi o único voto contrário. A medida tratava da associação da imagem do estado ao turismo sexual."
+        ],
+        "sources": [
+          {
+            "label": "Brasil de Fato · Votação na Alerj em 2006",
+            "url": "https://www.brasildefato.com.br/2026/10/20/licenca-maternidade-turismo-sexual-e-violencia-domestica-tres-vezes-que-flavio-bolsonaro-votou-contra-projetos-de-protecao-a-mulher/"
+          }
+        ]
       }
     ],
     "overview": [],
