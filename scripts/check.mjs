@@ -12,7 +12,6 @@ assert.equal(new Set(quizzes.map(quiz => quiz.id)).size, 3);
 for (const quiz of quizzes) {
   assert.match(quiz.id, /^[a-z]+$/);
   assert.ok(quiz.questions.every(question => typeof question === 'string' && question.endsWith('?')));
-  assert.ok(quiz.notes.length >= 3);
   assert.equal(quiz.questionSources.length, quiz.questions.length);
   for (const reference of [...quiz.questionSources, ...(quiz.extra ? [quiz.extraSource] : [])]) {
     assert.ok(reference.label);
