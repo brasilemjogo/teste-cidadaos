@@ -27,7 +27,7 @@ window.QUIZZES = [
           },
           {
             "name": "Flávio Bolsonaro",
-            "text": "Votou contra o conjunto da PEC 45/2019 em 08/11/2023. Esse voto foi sobre o modelo da reforma, não sobre toda forma de simplificação tributária.",
+            "text": "Votou contra a PEC 45/2019 em 08/11/2023.",
             "source": "Votação nominal no Senado",
             "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
@@ -45,9 +45,9 @@ window.QUIZZES = [
           },
           {
             "name": "Flávio Bolsonaro",
-            "text": "Defendeu a desoneração da cesta básica em fala registrada no Senado em 2024. Portanto, o voto contrário à reforma não permite classificá-lo como contrário à isenção dos alimentos.",
-            "source": "Fala registrada no Senado",
-            "url": "https://www25.senado.leg.br/web/atividade/notas-taquigraficas/-/notas/r/12861"
+            "text": "Votou contra a PEC 45/2019 em 08/11/2023.",
+            "source": "Votação nominal no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
         ]
       },
@@ -63,7 +63,7 @@ window.QUIZZES = [
           },
           {
             "name": "Flávio Bolsonaro",
-            "text": "Votou contra o conjunto da PEC 45/2019. Esse registro não comprova oposição isolada à devolução de impostos desta pergunta.",
+            "text": "Votou contra a PEC 45/2019 em 08/11/2023.",
             "source": "Votação nominal no Senado",
             "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
@@ -99,7 +99,7 @@ window.QUIZZES = [
           },
           {
             "name": "Flávio Bolsonaro",
-            "text": "Votou contra o conjunto da PEC 45/2019. Esse registro não comprova voto separado contra o imposto sobre cada produto citado.",
+            "text": "Votou contra a PEC 45/2019 em 08/11/2023.",
             "source": "Votação nominal no Senado",
             "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
@@ -117,7 +117,7 @@ window.QUIZZES = [
           },
           {
             "name": "Flávio Bolsonaro",
-            "text": "Votou contra o conjunto da PEC 45/2019, que incluiu essa mudança. Esse voto não comprova posição isolada sobre IPVA de jatinhos e iates.",
+            "text": "Votou contra a PEC 45/2019 em 08/11/2023.",
             "source": "Votação nominal no Senado",
             "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
@@ -135,7 +135,7 @@ window.QUIZZES = [
           },
           {
             "name": "Flávio Bolsonaro",
-            "text": "Votou contra o conjunto da PEC 45/2019. Esse registro não comprova defesa dos incentivos fiscais estaduais mencionados na pergunta.",
+            "text": "Votou contra a PEC 45/2019 em 08/11/2023.",
             "source": "Votação nominal no Senado",
             "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
@@ -153,7 +153,7 @@ window.QUIZZES = [
       {
         "name": "Flávio Bolsonaro",
         "status": "Proposta de campanha",
-        "text": "Seu plano propõe revisar a reforma tributária, reduzir o imposto sobre valor agregado (IVA) e a carga sobre produção e consumo, preservando a simplificação. São objetivos apresentados para um eventual governo.",
+        "text": "Seu plano propõe revisar a reforma tributária em um eventual governo.",
         "source": "TSE · Plano de governo, página 30 (PDF)",
         "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=30"
       }
