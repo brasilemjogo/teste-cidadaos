@@ -1,7 +1,7 @@
 /* Perguntas transcritas dos PDFs, sem mudar a redação. Apenas quebras de linha e espaços da extração foram normalizados. */
 window.QUIZZES = [
   {
-    id: 'impostos', number: '01', title: 'Impostos', theme: 'tax', time: '2 min',
+    id: 'impostos', number: '01', title: 'Impostos', theme: 'tax', time: '3 min',
     tagline: 'O que passa pelo seu bolso.',
     description: 'Alimentos, consumo e impostos.',
     intro: 'O que você pensa sobre impostos nas compras, nos serviços e nos bens?',
@@ -328,7 +328,7 @@ window.QUIZZES = [
     ]
   },
   {
-    id: 'mulheres', number: '03', title: 'Direitos das mulheres', theme: 'women', time: '2 min',
+    id: 'mulheres', number: '03', title: 'Direitos das mulheres', theme: 'women', time: '4 min',
     tagline: 'Trabalho, cuidado e autonomia.',
     description: 'Salário, serviços e proteção social.',
     intro: 'O que você pensa sobre salário, cuidado, saúde e moradia para as mulheres?',

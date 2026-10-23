@@ -124,7 +124,7 @@
   }
   function questionContext(reference) {
     if (!reference.positions) return '';
-    return `<section class="question-context" aria-label="Registros sobre esta pergunta"><h3>Sobre este ponto</h3>${reference.positions.map(item => `<div class="position-record"><p><strong>${item.name}:</strong> ${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">Fonte: ${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a></div>`).join('')}</section>`;
+    return `<section class="question-context" aria-label="Registros sobre esta pergunta"><h3>Sobre este ponto</h3>${consultationLink(reference)}${reference.positions.map(item => `<div class="position-record"><p><strong>${item.name}:</strong> ${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">Fonte: ${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a></div>`).join('')}</section>`;
   }
   function extraReview(quiz) {
     if (!quiz.extra) return '';
@@ -140,7 +140,7 @@
     </section>`;
   }
   function review(quiz) {
-    return `<section class="answer-review"><h2>Suas respostas</h2><ol>${quiz.questions.map((text, index) => `<li><div class="review-number">${String(index + 1).padStart(2, '0')}</div><div class="review-content"><p>${text}</p><div><span class="review-answer">${labels[state[quiz.id].answers[index]]}</span><a href="#${quiz.id}/pergunta/${index + 1}" aria-label="Alterar resposta da pergunta ${index + 1}">Alterar</a></div>${questionContext(quiz.questionSources[index])}${consultationLink(quiz.questionSources[index])}${behindPoint(quiz, index)}</div></li>`).join('')}</ol></section>${extraReview(quiz)}`;
+    return `<section class="answer-review"><h2>Suas respostas</h2><ol>${quiz.questions.map((text, index) => `<li><div class="review-number">${String(index + 1).padStart(2, '0')}</div><div class="review-content"><p>${text}</p><div><span class="review-answer">${labels[state[quiz.id].answers[index]]}</span><a href="#${quiz.id}/pergunta/${index + 1}" aria-label="Alterar resposta da pergunta ${index + 1}">Alterar</a></div>${questionContext(quiz.questionSources[index])}${quiz.questionSources[index].positions ? '' : consultationLink(quiz.questionSources[index])}${behindPoint(quiz, index)}</div></li>`).join('')}</ol></section>${extraReview(quiz)}`;
   }
   function resultSummary(quiz) {
     const answers = state[quiz.id].answers;
@@ -241,7 +241,7 @@ function result(quiz) {
       </section>
 
       ${comparison(quiz)}
-      ${moreContext(quiz)}
+
 
 </div>
   `;
@@ -261,6 +261,29 @@ function result(quiz) {
     if (view === 'pergunta' && Number.isInteger(index) && index >= 0 && index < quiz.questions.length) return { quiz, view: 'question', index };
     return { quiz, view: 'intro' };
   }
+  function emphasizeCandidateNames(root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (!node.parentElement.closest('strong, b, script, style, textarea') && /\b(?:Flávio(?:\s+Bolsonaro)?|Lula)\b/iu.test(node.textContent)) nodes.push(node);
+    }
+    for (const node of nodes) {
+      const fragment = document.createDocumentFragment();
+      const text = node.textContent;
+      let offset = 0;
+      for (const match of text.matchAll(/\b(?:Flávio(?:\s+Bolsonaro)?|Lula)\b/giu)) {
+        fragment.append(document.createTextNode(text.slice(offset, match.index)));
+        const strong = document.createElement('strong');
+        strong.className = 'candidate-name';
+        strong.textContent = match[0];
+        fragment.append(strong);
+        offset = match.index + match[0].length;
+      }
+      fragment.append(document.createTextNode(text.slice(offset)));
+      node.replaceWith(fragment);
+    }
+  }
   function render() {
     const current = route();
     if (current.quiz) {
@@ -269,6 +292,7 @@ function result(quiz) {
     }
     document.body.className = current.quiz ? `theme-${current.quiz.theme}${current.view === 'result' ? ' result-page' : ''}` : '';
     main.innerHTML = current.view === 'home' ? home() : current.view === 'intro' ? intro(current.quiz) : current.view === 'result' ? result(current.quiz) : question(current.quiz, current.index, current.view === 'extra');
+    emphasizeCandidateNames(main);
     document.title = current.quiz ? `${current.quiz.title} · Brasil em jogo` : 'Brasil em jogo · Faça o teste';
     document.querySelector('meta[name="theme-color"]').content = current.quiz?.theme === 'women' ? '#4b2380' : current.quiz?.theme === 'safety' ? '#171717' : '#124731';
     window.scrollTo(0, 0);
@@ -277,6 +301,7 @@ function result(quiz) {
   function showDialog(html) {
     if (!dialog.open) lastFocus = document.activeElement;
     dialogBody.innerHTML = html;
+    emphasizeCandidateNames(dialogBody);
     if (!dialog.open) dialog.showModal();
   }
   function privacy() {

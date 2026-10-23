@@ -185,3 +185,9 @@ details[open]>summary .context-disclosure:before{content:'−'}
 .case-sources .context-source{color:#ffd4df;font-size:16px}
 .result-page .site-footer{display:none}
 @media(max-width:700px){.case-highlight{padding:18px 14px;margin-block:24px}.case-highlight h3{font-size:25px}.case-record{padding:16px 12px}.case-record p{font-size:20px;line-height:1.6}.case-record h4{font-size:16px}}
+
+/* Leitura das perguntas e respostas na revisão. */
+.answer-review .review-content > p{font-size:20px}
+.answer-review .review-answer,.extra-review .review-answer{font-size:18px}
+
+strong.candidate-name{font-weight:800}
