@@ -240,7 +240,7 @@ function result(quiz) {
     }
     document.body.className = current.quiz ? `theme-${current.quiz.theme}` : '';
     main.innerHTML = current.view === 'home' ? home() : current.view === 'intro' ? intro(current.quiz) : current.view === 'result' ? result(current.quiz) : question(current.quiz, current.index, current.view === 'extra');
-    document.title = current.quiz ? `${current.quiz.title} · Em jogo` : 'Em jogo · Faça o teste';
+    document.title = current.quiz ? `${current.quiz.title} · Brasil em jogo` : 'Brasil em jogo · Faça o teste';
     document.querySelector('meta[name="theme-color"]').content = current.quiz?.theme === 'women' ? '#4b2380' : current.quiz?.theme === 'safety' ? '#171717' : '#124731';
     window.scrollTo(0, 0);
     main.focus({ preventScroll: true });

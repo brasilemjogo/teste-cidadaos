@@ -235,7 +235,7 @@ window.QUIZZES = [
       },
       {
         "name": "Flávio Bolsonaro",
-        "status": "Posição do PL em relaçãoa a PEC 18/2025",
+        "status": "Posição do PL em relação a PEC 18/2025",
         "text": "Deputados do PL criticaram a PEC da Segurança Pública apresentada pelo governo Lula, tentaram obstruir sua tramitação e votaram contra a proposta na Comissão de Constituição e Justiça.",
         "source": "Votação nominal na Câmara · PEC 18/2025",
         "url": "https://www.camara.leg.br/presenca-comissoes/votacao-portal?itemVotacao=72988&reuniao=77257"
@@ -243,19 +243,9 @@ window.QUIZZES = [
     ],
     notes: [
       {
-        title: 'O Sistema Único de Segurança Pública', label: 'Lei publicada',
-        text: 'A Lei 13.675/2018 instituiu o Susp e estabeleceu a atuação conjunta e coordenada de órgãos da União, dos estados, do Distrito Federal e dos municípios. A lei pode ser consultada na íntegra abaixo.',
-        source: 'Presidência da República · Lei 13.675/2018', url: 'https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13675.htm'
-      },
-      {
         title: 'A PEC da Segurança Pública', label: 'Proposta em tramitação',
         text: 'A PEC 18/2025, de iniciativa da Presidência da República, propõe mudanças na Constituição sobre órgãos de segurança e sistema penitenciário. Em 22/10/2026, o registro do Senado indicava tramitação e deliberação pendente no Plenário. Consulte a página para atualizações.',
         source: 'Senado Federal · PEC 18/2025', url: 'https://www25.senado.leg.br/web/atividade/materias/-/materia/172997'
-      },
-      {
-        title: 'Lei, proposta e implementação', label: 'Como ler os documentos',
-        text: 'O texto de uma proposta pode mudar durante a tramitação. Para saber quais dispositivos estão em vigor, consulte a norma publicada e a situação legislativa, além do texto que foi apresentado inicialmente.',
-        source: 'Câmara dos Deputados · Tramitação da PEC', url: 'https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2500080'
       }
     ]
   },
@@ -309,7 +299,7 @@ window.QUIZZES = [
       {
         "name": "Flávio Bolsonaro",
         "status": "Posicionamento em votação",
-        "text": "Votou contra ao PL 1.085/2023 em 31/05/2023!",
+        "text": "Em 31/05/2023, durante discussão na Comissão de Assuntos Econômicos do Senado, declarou que votaria contra o PL 1.085/2023. Argumentou que a proposta poderia desconsiderar critérios de meritocracia e desempenho profissional.",
         "source": "Votação nominal no Senado",
         "url": "https://www.camara.leg.br/internet/votacao/mostraVotacao.asp?ideVotacao=11427"
       }
