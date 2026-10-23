@@ -13,6 +13,16 @@ for (const quiz of quizzes) {
   assert.match(quiz.id, /^[a-z]+$/);
   assert.ok(quiz.questions.every(question => typeof question === 'string' && question.endsWith('?')));
   assert.ok(quiz.notes.length >= 3);
+  assert.equal(quiz.questionSources.length, quiz.questions.length);
+  for (const reference of [...quiz.questionSources, ...(quiz.extra ? [quiz.extraSource] : [])]) {
+    assert.ok(reference.label);
+    assert.match(reference.url, /^https:\/\/(?:www\d*\.)?(?:gov\.br|planalto\.gov\.br|senado\.leg\.br|camara\.leg\.br)\//);
+  }
+  assert.deepEqual(Array.from(quiz.comparison, item => item.name), ['Lula', 'Flávio Bolsonaro']);
+  for (const item of quiz.comparison) {
+    assert.ok(item.status && item.text && item.source);
+    assert.match(item.url, /^https:\/\/(?:www\d*\.)?(?:planalto\.gov\.br|senado\.leg\.br|camara\.leg\.br|tse\.jus\.br)\//);
+  }
   for (const note of quiz.notes) assert.match(note.url, /^https:\/\/(?:www\d*\.)?(?:gov\.br|planalto\.gov\.br|legislacao\.presidencia\.gov\.br|senado\.leg\.br|camara\.leg\.br)\//);
 }
 assert.ok(quizzes[1].extra);

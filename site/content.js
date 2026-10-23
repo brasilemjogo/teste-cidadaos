@@ -14,6 +14,52 @@ window.QUIZZES = [
       'Hoje quem tem carro paga IPVA, mas quem tem jatinho ou iate não paga. Você acha que eles também deveriam pagar?',
       'Os estados vivem numa briga, dando desconto de imposto para roubar empresas uns dos outros. Você acha que essa briga deveria acabar?'
     ],
+    questionSources: [
+      {
+        "label": "Reforma do consumo · LC 214/2025",
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+      },
+      {
+        "label": "Cesta básica · LC 214/2025",
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+      },
+      {
+        "label": "Devolução de impostos · LC 214/2025",
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+      },
+      {
+        "label": "Saúde e educação · LC 214/2025",
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+      },
+      {
+        "label": "Imposto Seletivo · LC 214/2025",
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+      },
+      {
+        "label": "IPVA · Emenda Constitucional 132/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+      },
+      {
+        "label": "Transição dos tributos · EC 132/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+      }
+    ],
+    comparison: [
+      {
+        "name": "Lula",
+        "status": "Lei sancionada",
+        "text": "Sancionou a Lei Complementar 214/2025, aprovada pelo Congresso. Ela prevê alíquota zero de IBS e CBS para a cesta básica e devolução de tributos para famílias de baixa renda. A aplicação segue o calendário de transição da reforma.",
+        "source": "Câmara · Sanção da LC 214/2025",
+        "url": "https://www.camara.leg.br/noticias/1127237-regulamentacao-da-reforma-tributaria-e-sancionada-conheca-a-nova-lei/"
+      },
+      {
+        "name": "Flávio Bolsonaro",
+        "status": "Proposta de campanha",
+        "text": "Seu plano propõe revisar a reforma tributária, reduzir o imposto sobre valor agregado (IVA) e a carga sobre produção e consumo, preservando a simplificação. São objetivos apresentados para um eventual governo.",
+        "source": "TSE · Plano de governo, página 30 (PDF)",
+        "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=30"
+      }
+    ],
     notes: [
       {
         title: 'Como a reforma está organizada', label: 'Estrutura dos tributos',
@@ -48,6 +94,60 @@ window.QUIZZES = [
       'Se um policial morre ou fica inválido trabalhando, a família dele deveria ter pensão garantida?'
     ],
     extra: 'Você acha que as balas deveriam deixar de ter “RG”?',
+    questionSources: [
+      {
+        "label": "Integração das polícias · Lei do Susp",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13675.htm"
+      },
+      {
+        "label": "Competências da PF · PEC 18/2025",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997"
+      },
+      {
+        "label": "Ferrovias e hidrovias · PEC 18/2025",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997"
+      },
+      {
+        "label": "Proteção dos recursos · Texto da PEC no Senado",
+        "url": "https://www12.senado.leg.br/noticias/materias/2026/10/14/ccj-conclui-votacao-da-pec-da-seguranca-texto-vai-ao-plenario"
+      },
+      {
+        "label": "Recursos do pré-sal · Texto da PEC no Senado",
+        "url": "https://www12.senado.leg.br/noticias/materias/2026/10/14/ccj-conclui-votacao-da-pec-da-seguranca-texto-vai-ao-plenario"
+      },
+      {
+        "label": "Polícias municipais · PEC 18/2025",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997"
+      },
+      {
+        "label": "Regras para facções · Texto da PEC no Senado",
+        "url": "https://www12.senado.leg.br/noticias/materias/2026/10/14/ccj-conclui-votacao-da-pec-da-seguranca-texto-vai-ao-plenario"
+      },
+      {
+        "label": "Previdência dos profissionais · PEC 18/2025",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997"
+      }
+    ],
+    extraSource: {
+      "label": "Identificação das munições · Estatuto do Desarmamento, art. 23",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm"
+    },
+    comparison: [
+      {
+        "name": "Lula",
+        "status": "Proposta legislativa",
+        "text": "Seu governo apresentou a PEC 18/2025. A proposta trata da integração das polícias e da ampliação de competências federais. O texto passou por alterações no Congresso e, na consulta de 23/10/2026, ainda estava em tramitação no Senado.",
+        "source": "Senado · Texto e tramitação da PEC 18/2025",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997"
+      },
+      {
+        "name": "Flávio Bolsonaro",
+        "status": "Proposta de campanha",
+        "text": "Seu plano propõe classificar facções e milícias como organizações narcoterroristas, bloquear ativos ligados ao crime e criar cinco presídios de segurança máxima. São medidas propostas para um eventual governo.",
+        "source": "TSE · Plano de governo, páginas 13–14 (PDF)",
+        "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=13"
+      }
+    ],
     notes: [
       {
         title: 'O Sistema Único de Segurança Pública', label: 'Lei publicada',
@@ -78,6 +178,48 @@ window.QUIZZES = [
       'Muita mãe deixa de trabalhar ou estudar porque não tem com quem deixar o filho. O governo deveria abrir mais creches e escolas em tempo integral, espaços para deixar as crianças enquanto a mãe trabalha ou estuda, e lavanderias comunitárias, para aliviar quem cuida da casa?',
       'Quando uma mulher é assassinada pelo companheiro, os filhos muitas vezes ficam sem nada. Essas crianças, se forem pobres (família com renda de até R$ 405 por pessoa), deveriam receber um salário mínimo por mês até os 18 anos?',
       'A casa do Minha Casa Minha Vida deveria ficar no nome da mulher, e continuar com ela se o casal se separar?'
+    ],
+    questionSources: [
+      {
+        "label": "Absorventes gratuitos · Serviço oficial",
+        "url": "https://www.gov.br/pt-br/servicos/obter-autorizacao-para-retirada-gratuita-de-absorventes-higienicos-em-estabelecimentos-do-farmacia-popular"
+      },
+      {
+        "label": "Igualdade salarial · Lei 14.611/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm"
+      },
+      {
+        "label": "Transparência salarial · Lei 14.611/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm"
+      },
+      {
+        "label": "Política Nacional de Cuidados · Lei 15.069/2024",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15069.htm"
+      },
+      {
+        "label": "Pensão para órfãos · Lei 14.717/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14717.htm"
+      },
+      {
+        "label": "Minha Casa Minha Vida · Lei 14.620/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm"
+      }
+    ],
+    comparison: [
+      {
+        "name": "Lula",
+        "status": "Lei sancionada",
+        "text": "Sancionou a Lei 14.611/2023, aprovada pelo Congresso, que reforça a igualdade salarial entre mulheres e homens. Ela prevê fiscalização e relatórios de transparência salarial para empresas privadas com 100 ou mais empregados.",
+        "source": "Planalto · Lei 14.611/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm"
+      },
+      {
+        "name": "Flávio Bolsonaro",
+        "status": "Proposta de campanha",
+        "text": "Seu plano propõe criar a Central da Mulher, com acolhimento, orientação jurídica, apoio psicológico, qualificação profissional e acesso a crédito, em unidades físicas e aplicativo. São serviços propostos para um eventual governo.",
+        "source": "TSE · Plano de governo, páginas 17–18 (PDF)",
+        "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=17"
+      }
     ],
     notes: [
       {
