@@ -88,11 +88,41 @@
   function comparison(quiz) {
     return `<section class="comparison-section" aria-labelledby="comparison-heading"><div class="reading-heading"><h2 id="comparison-heading">Lula e Flávio Bolsonaro</h2><p>Medidas e propostas sobre este tema. O conteúdo é igual para todos.</p></div><div class="comparison-grid">${quiz.comparison.map(item => `<article class="comparison-card"><span class="eyebrow">${item.status}</span><h3>${item.name}</h3><p>${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note">Recorte de registros e planos; não é uma lista completa. Propostas dependem de aprovação e implementação. Consulta em 23/10/2026.</p></section>`;
   }
+  function questionContext(reference) {
+    if (!reference.positions) return '';
+    return `<section class="question-context" aria-label="Registros sobre esta pergunta"><h3>Sobre este ponto</h3>${reference.positions.map(item => `<div class="position-record"><p><strong>${item.name}:</strong> ${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">Fonte: ${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a></div>`).join('')}</section>`;
+  }
   function review(quiz) {
-    return `<section class="answer-review"><h2>Suas respostas</h2><ol>${quiz.questions.map((text, index) => `<li><div class="review-number">${String(index + 1).padStart(2, '0')}</div><div class="review-content"><p>${text}</p><div><span class="review-answer">${labels[state[quiz.id].answers[index]]}</span><a href="#${quiz.id}/pergunta/${index + 1}" aria-label="Alterar resposta da pergunta ${index + 1}">Alterar</a></div>${consultationLink(quiz.questionSources[index])}</div></li>`).join('')}${quiz.extra ? `<li><div class="review-number">+</div><div class="review-content"><p>${quiz.extra}</p><div><span class="review-answer">${labels[state[quiz.id].extra]}</span><a href="#${quiz.id}/extra">Alterar</a></div>${consultationLink(quiz.extraSource)}</div></li>` : ''}</ol></section>`;
+    return `<section class="answer-review"><h2>Suas respostas</h2><ol>${quiz.questions.map((text, index) => `<li><div class="review-number">${String(index + 1).padStart(2, '0')}</div><div class="review-content"><p>${text}</p><div><span class="review-answer">${labels[state[quiz.id].answers[index]]}</span><a href="#${quiz.id}/pergunta/${index + 1}" aria-label="Alterar resposta da pergunta ${index + 1}">Alterar</a></div>${questionContext(quiz.questionSources[index])}${consultationLink(quiz.questionSources[index])}</div></li>`).join('')}${quiz.extra ? `<li><div class="review-number">+</div><div class="review-content"><p>${quiz.extra}</p><div><span class="review-answer">${labels[state[quiz.id].extra]}</span><a href="#${quiz.id}/extra">Alterar</a></div>${consultationLink(quiz.extraSource)}</div></li>` : ''}</ol></section>`;
+  }
+  function resultSummary(quiz) {
+    const answers = state[quiz.id].answers;
+    const total = quiz.questions.length;
+    const favorable = answers.filter(answer => answer === 'for').length;
+    const against = answers.filter(answer => answer === 'against').length;
+    const skipped = answers.filter(answer => answer === 'skip').length;
+    const description = 'Reveja suas respostas e consulte as fontes.';
+    if (favorable > total / 2) return {
+      heading: 'Sua opinião é favorável a essas afirmações',
+      score: `${favorable}/${total} a favor`, description
+    };
+    if (against > total / 2) return {
+      heading: 'Sua opinião é contrária a essas afirmações',
+      score: `${against}/${total} contra`, description
+    };
+    if (skipped > total / 2) return {
+      heading: 'Você ainda está indeciso sobre vários temas!',
+      score: `${skipped}/${total} sem resposta`,
+      description: 'Pesquise sobre os temas nas fontes abaixo.'
+    };
+    return {
+      heading: 'Suas respostas não indicam uma maioria',
+      score: `${favorable} a favor · ${against} contra · ${skipped} sem resposta`, description
+    };
   }
   function result(quiz) {
-    return `<div class="result-shell theme-${quiz.theme}"><div class="result-top"><a class="back-link" href="#">${icon('back')}Todos os testes</a><span class="eyebrow">${quiz.title}</span></div><section class="result-hero"><div><span class="eyebrow">TESTE CONCLUÍDO</span><h1>Seu registro</h1><p>Reveja suas respostas e consulte as fontes.</p></div><div class="result-symbol" aria-hidden="true">${icon('check')}</div></section>${review(quiz)}<section class="reading-section"><div class="reading-heading"><h2>Entenda o tema</h2></div><div class="reading-grid">${quiz.notes.map(note => `<article class="reading-card"><span class="eyebrow">${note.label}</span><h3>${note.title}</h3><p>${note.text}</p><a href="${note.url}" target="_blank" rel="noopener noreferrer">${note.source}<span aria-hidden="true">↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note">Fontes consultadas em 22/10/2026. As perguntas mantêm a redação do material original, inclusive seus exemplos e referências de época. Normas e tramitações podem mudar.</p></section>${comparison(quiz)}<div class="result-actions"><a class="button primary" href="#">Escolher outro teste${icon('arrow')}</a><button class="button secondary" data-action="copy-link">${icon('link')}Copiar link do teste</button><button class="text-button" data-action="reset">Apagar e refazer</button></div><p class="share-note">O link abre apenas o teste, sem suas respostas.</p>${storageNote()}</div>`;
+    const summary = resultSummary(quiz);
+    return `<div class="result-shell theme-${quiz.theme}"><div class="result-top"><a class="back-link" href="#">${icon('back')}Todos os testes</a><span class="eyebrow">${quiz.title}</span></div><section class="result-hero"><div><span class="eyebrow">TESTE CONCLUÍDO</span><h1>${summary.heading}</h1><p class="result-score">${summary.score}</p><p>${summary.description}</p></div><div class="result-symbol" aria-hidden="true">${icon('check')}</div></section>${review(quiz)}<section class="reading-section"><div class="reading-heading"><h2>Entenda o tema</h2></div><div class="reading-grid">${quiz.notes.map(note => `<article class="reading-card"><span class="eyebrow">${note.label}</span><h3>${note.title}</h3><p>${note.text}</p><a href="${note.url}" target="_blank" rel="noopener noreferrer">${note.source}<span aria-hidden="true">↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note">Fontes consultadas em 22/10/2026. As perguntas mantêm a redação do material original, inclusive seus exemplos e referências de época. Normas e tramitações podem mudar.</p></section>${comparison(quiz)}<div class="result-actions"><a class="button primary" href="#">Escolher outro teste${icon('arrow')}</a><button class="button secondary" data-action="copy-link">${icon('link')}Copiar link do teste</button><button class="text-button" data-action="reset">Apagar e refazer</button></div><p class="share-note">O link abre apenas o teste, sem suas respostas.</p>${storageNote()}</div>`;
   }
   function route() {
     const [id, view, position] = location.hash.slice(1).split('/');

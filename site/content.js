@@ -17,31 +17,129 @@ window.QUIZZES = [
     questionSources: [
       {
         "label": "Reforma do consumo · LC 214/2025",
-        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Sancionou a LC 214/2025, que institui IBS, CBS e Imposto Seletivo. O modelo simplifica a tributação, mas não cria literalmente um único imposto.",
+            "source": "LC 214/2025",
+            "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Votou contra o conjunto da PEC 45/2019 em 08/11/2023. Esse voto foi sobre o modelo da reforma, não sobre toda forma de simplificação tributária.",
+            "source": "Votação nominal no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
+          }
+        ]
       },
       {
         "label": "Cesta básica · LC 214/2025",
-        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Sancionou a LC 214/2025, com alíquota zero de IBS e CBS para os alimentos da cesta básica nacional. A aplicação segue a transição da reforma.",
+            "source": "LC 214/2025",
+            "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Defendeu a desoneração da cesta básica em fala registrada no Senado em 2024. Portanto, o voto contrário à reforma não permite classificá-lo como contrário à isenção dos alimentos.",
+            "source": "Fala registrada no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/notas-taquigraficas/-/notas/r/12861"
+          }
+        ]
       },
       {
         "label": "Devolução de impostos · LC 214/2025",
-        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Sancionou as regras de devolução de IBS e CBS para famílias de baixa renda, incluindo contas de serviços essenciais, conforme os critérios e o calendário da LC 214/2025.",
+            "source": "LC 214/2025",
+            "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Votou contra o conjunto da PEC 45/2019. Esse registro não comprova oposição isolada à devolução de impostos desta pergunta.",
+            "source": "Votação nominal no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
+          }
+        ]
       },
       {
         "label": "Saúde e educação · LC 214/2025",
-        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Sancionou reduções de IBS e CBS para saúde e educação e regras de redução ou alíquota zero para medicamentos, na LC 214/2025.",
+            "source": "LC 214/2025",
+            "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Apresentou emenda para ampliar a desoneração de dispositivos médicos. Esse registro trata de parte do tema, sem comprovar posição sobre todos os itens da pergunta.",
+            "source": "Emenda 1534 ao PLP 68/2024 (PDF)",
+            "url": "https://legis.senado.leg.br/sdleg-getter/documento?dm=9836603&ts=1733531269600"
+          }
+        ]
       },
       {
         "label": "Imposto Seletivo · LC 214/2025",
-        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+        "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Sancionou a LC 214/2025, que inclui tabaco, bebidas alcoólicas e bebidas açucaradas no Imposto Seletivo. A cobrança depende das regras e do calendário previstos na legislação.",
+            "source": "LC 214/2025",
+            "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Votou contra o conjunto da PEC 45/2019. Esse registro não comprova voto separado contra o imposto sobre cada produto citado.",
+            "source": "Votação nominal no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
+          }
+        ]
       },
       {
         "label": "IPVA · Emenda Constitucional 132/2023",
-        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Seu governo apoiou a reforma tributária, promulgada pelo Congresso. A EC 132/2023 ampliou a previsão de IPVA para veículos aquáticos e aéreos, com exceções; a cobrança depende da legislação aplicável.",
+            "source": "Plano no TSE · Reforma tributária",
+            "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pt#page=11"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Votou contra o conjunto da PEC 45/2019, que incluiu essa mudança. Esse voto não comprova posição isolada sobre IPVA de jatinhos e iates.",
+            "source": "Votação nominal no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
+          }
+        ]
       },
       {
         "label": "Transição dos tributos · EC 132/2023",
-        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+        "positions": [
+          {
+            "name": "Lula",
+            "text": "Seu plano defende a reforma do consumo como forma de eliminar a guerra fiscal. A EC 132/2023 prevê a transição do ICMS para o IBS.",
+            "source": "Plano no TSE · Reforma tributária",
+            "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pt#page=11"
+          },
+          {
+            "name": "Flávio Bolsonaro",
+            "text": "Votou contra o conjunto da PEC 45/2019. Esse registro não comprova defesa dos incentivos fiscais estaduais mencionados na pergunta.",
+            "source": "Votação nominal no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
+          }
+        ]
       }
     ],
     comparison: [

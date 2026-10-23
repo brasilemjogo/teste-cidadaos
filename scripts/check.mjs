@@ -16,6 +16,13 @@ for (const quiz of quizzes) {
   assert.equal(quiz.questionSources.length, quiz.questions.length);
   for (const reference of [...quiz.questionSources, ...(quiz.extra ? [quiz.extraSource] : [])]) {
     assert.ok(reference.label);
+    if (quiz.id === 'impostos') {
+      assert.deepEqual(Array.from(reference.positions, item => item.name), ['Lula', 'Flávio Bolsonaro']);
+      for (const item of reference.positions) {
+        assert.ok(item.text && item.source);
+        assert.match(item.url, /^https:\/\/(?:www\d*\.|legis\.)?(?:planalto\.gov\.br|senado\.leg\.br|tse\.jus\.br)\//);
+      }
+    }
     assert.match(reference.url, /^https:\/\/(?:www\d*\.)?(?:gov\.br|planalto\.gov\.br|senado\.leg\.br|camara\.leg\.br)\//);
   }
   assert.deepEqual(Array.from(quiz.comparison, item => item.name), ['Lula', 'Flávio Bolsonaro']);
