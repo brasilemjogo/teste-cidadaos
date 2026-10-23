@@ -6,7 +6,7 @@ window.QUIZZES = [
     description: 'Alimentos, consumo e impostos.',
     intro: 'O que você pensa sobre impostos nas compras, nos serviços e nos bens?',
     questions: [
-      'Hoje existem 5 impostos diferentes sobre o que você compra, cada um com regras próprias. Você acha que deveriam virar um só, mais simples?',
+      'Hoje existem 5 impostos diferentes sobre o que você compra, cada um com regras próprias. Você acha que deveriam virar apenas dois com regras semelhantes e mais simples?',
       'Você acha que arroz, feijão, carne e outros alimentos da cesta básica deveriam ficar sem imposto?',
       'Você acha que famílias mais pobres deveriam receber de volta parte do imposto que pagam na conta de luz, no gás e na água?',
       'Remédios, escola e tratamento de saúde deveriam pagar menos imposto que o resto?',
@@ -39,7 +39,7 @@ window.QUIZZES = [
         "positions": [
           {
             "name": "Lula",
-            "text": "Sancionou a LC 214/2025, com alíquota zero de IBS e CBS para os alimentos da cesta básica nacional. A aplicação segue a transição da reforma.",
+            "text": "Sancionou a LC 214/2025, com alíquota zero de IBS e CBS para os alimentos da cesta básica nacional.",
             "source": "LC 214/2025",
             "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm"
           },
@@ -81,9 +81,9 @@ window.QUIZZES = [
           },
           {
             "name": "Flávio Bolsonaro",
-            "text": "Apresentou emenda para ampliar a desoneração de dispositivos médicos. Esse registro trata de parte do tema, sem comprovar posição sobre todos os itens da pergunta.",
-            "source": "Emenda 1534 ao PLP 68/2024 (PDF)",
-            "url": "https://legis.senado.leg.br/sdleg-getter/documento?dm=9836603&ts=1733531269600"
+            "text": "Votou contra a PEC 45/2019 em 08/11/2023.",
+            "source": "Votação nominal no Senado",
+            "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158930/votacoes"
           }
         ]
       },
@@ -161,18 +161,13 @@ window.QUIZZES = [
     notes: [
       {
         title: 'Como a reforma está organizada', label: 'Estrutura dos tributos',
-        text: 'O modelo de tributação do consumo prevê a CBS, federal, e o IBS, de estados e municípios, além do Imposto Seletivo. A expressão “um só”, usada na primeira pergunta original, simplifica essa estrutura.',
+        text: 'O modelo de tributação do consumo prevê a CBS, federal, e o IBS, de estados e municípios, além do Imposto Seletivo.',
         source: 'Receita Federal · Entenda a reforma', url: 'https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/entenda'
       },
       {
         title: 'Cesta básica e devolução de tributos', label: 'Regulamentação',
         text: 'A Lei Complementar 214/2025 trata da cesta básica nacional com alíquota zero e da devolução de tributos a famílias que atendam aos critérios legais. A aplicação depende das regras e do cronograma previstos na legislação.',
         source: 'Câmara dos Deputados · Regulamentação da reforma', url: 'https://www.camara.leg.br/noticias/1127237-regulamentacao-da-reforma-tributaria-e-sancionada-conheca-a-nova-lei/'
-      },
-      {
-        title: 'Uma observação sobre o IPVA', label: 'Referência temporal',
-        text: 'A pergunta 6 mantém o texto do folheto. A Emenda Constitucional 132/2023 ampliou a previsão de incidência do IPVA para veículos aquáticos e aéreos, com exceções. Isso não significa cobrança automática e uniforme em todo o país.',
-        source: 'Presidência da República · EC 132/2023', url: 'https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm'
       }
     ]
   },
@@ -234,16 +229,16 @@ window.QUIZZES = [
       {
         "name": "Lula",
         "status": "Proposta legislativa",
-        "text": "Seu governo apresentou a PEC 18/2025. A proposta trata da integração das polícias e da ampliação de competências federais. O texto passou por alterações no Congresso e, na consulta de 23/10/2026, ainda estava em tramitação no Senado.",
+        "text": "Seu governo apresentou a PEC 18/2025. A proposta trata da integração das polícias e da ampliação de competências federais. O texto passou por alterações no Congresso e, na consulta de 22/10/2026, ainda estava em tramitação no Senado.",
         "source": "Senado · Texto e tramitação da PEC 18/2025",
         "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997"
       },
       {
         "name": "Flávio Bolsonaro",
-        "status": "Proposta de campanha",
-        "text": "Seu plano propõe classificar facções e milícias como organizações narcoterroristas, bloquear ativos ligados ao crime e criar cinco presídios de segurança máxima. São medidas propostas para um eventual governo.",
-        "source": "TSE · Plano de governo, páginas 13–14 (PDF)",
-        "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=13"
+        "status": "Posição do PL em relaçãoa a PEC 18/2025",
+        "text": "Deputados do PL criticaram a PEC da Segurança Pública apresentada pelo governo Lula, tentaram obstruir sua tramitação e votaram contra a proposta na Comissão de Constituição e Justiça.",
+        "source": "Votação nominal na Câmara · PEC 18/2025",
+        "url": "https://www.camara.leg.br/presenca-comissoes/votacao-portal?itemVotacao=72988&reuniao=77257"
       }
     ],
     notes: [
@@ -313,10 +308,10 @@ window.QUIZZES = [
       },
       {
         "name": "Flávio Bolsonaro",
-        "status": "Proposta de campanha",
-        "text": "Seu plano propõe criar a Central da Mulher, com acolhimento, orientação jurídica, apoio psicológico, qualificação profissional e acesso a crédito, em unidades físicas e aplicativo. São serviços propostos para um eventual governo.",
-        "source": "TSE · Plano de governo, páginas 17–18 (PDF)",
-        "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=17"
+        "status": "Posicionamento em votação",
+        "text": "Votou contra ao PL 1.085/2023 em 31/05/2023!",
+        "source": "Votação nominal no Senado",
+        "url": "https://www.camara.leg.br/internet/votacao/mostraVotacao.asp?ideVotacao=11427"
       }
     ],
     notes: [

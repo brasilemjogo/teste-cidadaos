@@ -86,7 +86,7 @@
     return `<a class="consultation-link" href="${reference.url}" target="_blank" rel="noopener noreferrer">Consultar: ${reference.label}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a>`;
   }
   function comparison(quiz) {
-    return `<section class="comparison-section" aria-labelledby="comparison-heading"><div class="reading-heading"><h2 id="comparison-heading">Lula e Flávio Bolsonaro</h2><p>Medidas e propostas sobre este tema. O conteúdo é igual para todos.</p></div><div class="comparison-grid">${quiz.comparison.map(item => `<article class="comparison-card"><span class="eyebrow">${item.status}</span><h3>${item.name}</h3><p>${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note">Recorte de registros e planos; não é uma lista completa. Propostas dependem de aprovação e implementação. Consulta em 23/10/2026.</p></section>`;
+    return `<section class="comparison-section" aria-labelledby="comparison-heading"><div class="reading-heading"><h2 id="comparison-heading">Lula e Flávio Bolsonaro</h2><p>Medidas e propostas sobre este tema.</p></div><div class="comparison-grid">${quiz.comparison.map(item => `<article class="comparison-card"><span class="eyebrow">${item.status}</span><h3>${item.name}</h3><p>${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note"> Consulta em 22/10/2026.</p></section>`;
   }
   function questionContext(reference) {
     if (!reference.positions) return '';
@@ -103,8 +103,7 @@
     const skipped = answers.filter(answer => answer === 'skip').length;
     const description = 'Reveja suas respostas e consulte as fontes.';
     if (favorable > total / 2) return {
-      heading: 'Sua opinião é favorável a políticas do governo Lula!',
-      subtitle: 'VOTE 13!',
+      heading: 'Você é favorável às políticas do governo Lula!',
       tone: 'favorable', symbol: 'check',
       score: `${favorable}/${total} a favor`, description
     };
@@ -190,9 +189,7 @@ function result(quiz) {
         </div>
 
         <p class="source-note">
-          Fontes consultadas em 22/10/2026. As perguntas mantêm a redação
-          do material original, inclusive seus exemplos e referências
-          de época. Normas e tramitações podem mudar.
+          Fontes consultadas em 22/10/2026. 
         </p>
       </section>
 
