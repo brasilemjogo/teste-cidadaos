@@ -130,9 +130,9 @@ function result(quiz) {
 
   const subtitle =
     summary.tone === 'favorable'
-      ? 'Vote 13! Você está com o Lula!'
+      ? 'Vote 13!'
       : summary.tone === 'against'
-        ? 'Maioria contra, você está com o Flávio Bolsonaro!'
+        ? 'Você está com o Flávio!'
         : 'Sem maioria a favor ou contra';
 
   return `
