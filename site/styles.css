@@ -65,5 +65,19 @@ dialog{border:1px solid #cbd3c6;border-radius:18px;padding:36px;color:#173b2c;ba
 .review-content .position-record a{display:inline;font-size:16px;line-height:1.5;overflow-wrap:anywhere;text-underline-offset:3px}
 .position-record:last-child{margin-bottom:0}
 
-.result-hero h1{font-size:28px;line-height:1.2;letter-spacing:-.5px}.result-hero .result-score{font-size:20px;line-height:1.5}.result-hero .result-symbol{display:none}
+.result-hero h1{font-size:28px;line-height:1.2;letter-spacing:-.5px}.result-hero .result-score{font-size:20px;line-height:1.5}
 .brand{white-space:nowrap}@media(max-width:360px){.site-header{gap:10px}}
+
+/* Large confirmation illustration beside the completed-test summary. */
+.result-copy{min-width:0;flex:1}
+.result-hero .result-symbol{display:grid;width:180px;height:180px;margin:0;border:3px solid #b4d2b9;background:#147e46;box-shadow:0 8px 0 #0c4f2c1a}
+.result-hero .result-symbol .icon{width:110px;height:110px;color:#fff;stroke-width:3}
+@media(max-width:700px){
+  .result-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 14px}
+  .result-copy{display:contents}
+  .result-copy>.eyebrow{grid-column:1;grid-row:1;line-height:1.5}
+  .result-hero .result-symbol{grid-column:2;grid-row:1;width:96px;height:96px}
+  .result-hero .result-symbol .icon{width:60px;height:60px}
+  .result-copy>h1,.result-copy>p{grid-column:1/-1;margin:0}
+  .result-hero .result-score{margin:0}
+}
