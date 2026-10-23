@@ -3,8 +3,8 @@ window.QUIZZES = [
   {
     id: 'impostos', number: '01', title: 'Impostos', theme: 'tax', time: '2 min',
     tagline: 'O que passa pelo seu bolso.',
-    description: 'Alimentos, saúde e consumo. Um teste sobre as regras que fazem parte do dia a dia.',
-    intro: 'Os impostos estão presentes nas compras e nos serviços. Este teste reúne perguntas sobre simplificação, alimentos, devolução de tributos e tributação de bens. Leia cada situação e registre sua resposta.',
+    description: 'Alimentos, consumo e impostos.',
+    intro: 'O que você pensa sobre impostos nas compras, nos serviços e nos bens?',
     questions: [
       'Hoje existem 5 impostos diferentes sobre o que você compra, cada um com regras próprias. Você acha que deveriam virar um só, mais simples?',
       'Você acha que arroz, feijão, carne e outros alimentos da cesta básica deveriam ficar sem imposto?',
@@ -35,8 +35,8 @@ window.QUIZZES = [
   {
     id: 'seguranca', number: '02', title: 'Segurança pública', theme: 'safety', time: '3 min',
     tagline: 'Como a proteção se organiza.',
-    description: 'Integração das polícias, financiamento e atuação contra o crime organizado.',
-    intro: 'A segurança pública envolve diferentes órgãos e níveis de governo. As perguntas deste teste abordam cooperação entre polícias, recursos, atribuições e proteção dos profissionais. Ao final, há uma pergunta complementar do material.',
+    description: 'Polícias, recursos e combate ao crime.',
+    intro: 'O que você pensa sobre a atuação das polícias e os recursos para a segurança?',
     questions: [
       'As polícias federal, estaduais e municipais deveriam trabalhar juntas e trocar informações, como o SUS faz com os hospitais do país?',
       'Tem facção que age em vários estados e fora do Brasil. A Polícia Federal deveria ter mais poder para ir atrás delas?',
@@ -69,8 +69,8 @@ window.QUIZZES = [
   {
     id: 'mulheres', number: '03', title: 'Direitos das mulheres', theme: 'women', time: '2 min',
     tagline: 'Trabalho, cuidado e autonomia.',
-    description: 'Salário, acesso a serviços e proteção social. Questões que atravessam a vida cotidiana.',
-    intro: 'Este teste reúne perguntas sobre saúde menstrual, igualdade salarial, cuidado, proteção de crianças e moradia. As perguntas preservam os exemplos e os valores do folheto; as notas ao final ajudam a contextualizar a legislação.',
+    description: 'Salário, serviços e proteção social.',
+    intro: 'O que você pensa sobre salário, cuidado, saúde e moradia para as mulheres?',
     questions: [
       'Tem menina que falta na escola porque não tem dinheiro para comprar absorvente. O absorvente deveria ser de graça na farmácia para quem precisa?',
       'Uma mulher que faz o mesmo trabalho que um homem deveria ganhar o mesmo salário? E a empresa que paga menos deveria levar multa?',
