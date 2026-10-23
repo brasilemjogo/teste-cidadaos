@@ -7,7 +7,7 @@ const context = createContext({ window: {} });
 new Script(await readFile(new URL('content.js', root), 'utf8')).runInContext(context);
 const quizzes = context.window.QUIZZES;
 assert.equal(quizzes.length, 3);
-assert.deepEqual(Array.from(quizzes, quiz => quiz.questions.length), [7, 8, 6]);
+assert.deepEqual(Array.from(quizzes, quiz => quiz.questions.length), [9, 8, 15]);
 assert.equal(new Set(quizzes.map(quiz => quiz.id)).size, 3);
 for (const quiz of quizzes) {
   assert.match(quiz.id, /^[a-z]+$/);
