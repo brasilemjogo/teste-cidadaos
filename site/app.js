@@ -120,7 +120,7 @@
     return `<a class="consultation-link" href="${reference.url}" target="_blank" rel="noopener noreferrer">Consultar: ${reference.label}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a>`;
   }
   function comparison(quiz) {
-    return `<section class="comparison-section" aria-labelledby="comparison-heading"><div class="reading-heading"><h2 id="comparison-heading">Lula e Flávio Bolsonaro</h2><p>Medidas e propostas sobre este tema.</p></div><div class="comparison-grid">${quiz.comparison.map(item => `<article class="comparison-card"><span class="eyebrow">${item.status}</span><h3>${item.name}</h3><p>${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note"> Consulta em 22/10/2026.</p></section>`;
+    return `<section class="comparison-section" aria-labelledby="comparison-heading"><div class="reading-heading"><h2 id="comparison-heading">Lula e Flávio Bolsonaro</h2><p>Medidas e propostas sobre este tema.</p></div><div class="comparison-grid">${quiz.comparison.map(item => `<article class="comparison-card"><span class="eyebrow">${item.status}</span><h3>${item.name}</h3><p>${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a>${(item.sources || []).map(consultationLink).join('')}</article>`).join('')}</div><p class="source-note"> Consulta em 22/10/2026.</p></section>`;
   }
   function questionContext(reference) {
     if (!reference.positions) return '';

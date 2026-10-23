@@ -12,7 +12,7 @@ window.QUIZZES = [
       'Remédios, escola e tratamento de saúde deveriam pagar menos imposto que o resto?',
       'Você acha que cigarro, bebida alcoólica e refrigerante deveriam pagar um imposto extra, por fazerem mal à saúde?',
       'Hoje quem tem carro paga IPVA, mas quem tem jatinho ou iate não paga. Você acha que eles também deveriam pagar?',
-      'Para atrair empresas, um estado oferece mais desconto de imposto que o outro. Com isso, os estados podem arrecadar menos para serviços como saúde e educação. Você acha que essa disputa deveria acabar?',
+      'Para atrair empresas, um estado oferece mais desconto de imposto que o outro. Com isso, os estados arrecadam menos para serviços como saúde e educação. Você acha que essa disputa deveria acabar?',
       'As mudanças nos impostos, incluindo tirar os impostos dos alimentos da cesta básica, deveriam começar nas datas previstas, sem adiar?',
       'Quem ganha até R$ 5 mil por mês deveria ficar sem pagar Imposto de Renda, com um imposto mínimo para quem ganha mais de R$ 50 mil por mês?'
     ],
@@ -184,16 +184,20 @@ window.QUIZZES = [
       {
         "name": "Lula",
         "status": "Lei sancionada",
-        "text": "Sancionou a Lei Complementar 214/2025, aprovada pelo Congresso. Ela prevê alíquota zero de IBS e CBS para a cesta básica e devolução de tributos para famílias de baixa renda. A aplicação segue o calendário de transição da reforma.",
+        "text": "Lula sancionou a LC 214/2025. A partir de janeiro de 2027, os alimentos da cesta básica nacional terão imposto federal (CBS) zero, uma medida para baratear a alimentação e as compras de mercado das famílias. No mesmo mês começa a devolução da CBS para famílias de baixa renda; a devolução do IBS começa em janeiro de 2029.",
         "source": "Câmara · Sanção da LC 214/2025",
         "url": "https://www.camara.leg.br/noticias/1127237-regulamentacao-da-reforma-tributaria-e-sancionada-conheca-a-nova-lei/"
       },
       {
         "name": "Flávio Bolsonaro",
         "status": "Proposta de campanha",
-        "text": "Seu plano propõe revisar a reforma tributária em um eventual governo.",
+        "text": "Flávio propõe rever a reforma e anunciou uma suspensão de pelo menos um ano. Se isso adiar o imposto zero na cesta básica e a devolução de impostos, famílias de baixa renda esperarão mais pelo alívio no orçamento.",
         "source": "TSE · Plano de governo, página 30 (PDF)",
-        "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=30"
+        "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-pl#page=30",
+        "sources": [
+          {"label": "Declaração sobre suspensão · InfoMoney / Estadão", "url": "https://www.infomoney.com.br/politica/vamos-suspender-por-um-ano-a-entrada-da-reforma-tributaria-diz-flavio-bolsonaro/"},
+          {"label": "Cesta básica e devolução de tributos · Câmara", "url": "https://www.camara.leg.br/noticias/1127237-regulamentacao-da-reforma-tributaria-e-sancionada-conheca-a-nova-lei/"}
+        ]
       }
     ],
     notes: [
