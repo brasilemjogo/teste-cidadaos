@@ -305,7 +305,7 @@ function result(quiz) {
     if (!dialog.open) dialog.showModal();
   }
   function privacy() {
-    showDialog(`<h2 id="dialog-title">Suas respostas ficam aqui.</h2><p>As respostas são salvas só neste navegador e não são enviadas a um servidor. Não há cadastro nem rastreadores.</p><p>Outras pessoas que usam este navegador podem ver o registro. Para removê-lo, use o botão abaixo ou limpe os dados do navegador.</p><p>A hospedagem pode registrar acessos ao site, sem as respostas.${persistent ? '' : ' O salvamento está bloqueado; as respostas duram só enquanto esta página estiver aberta.'}</p><button class="button danger" data-action="confirm-clear">Apagar respostas dos três testes</button>`);
+    showDialog(`<h2 id="dialog-title">Suas respostas ficam aqui.</h2><p>As respostas são salvas só neste navegador e não são enviadas a um servidor. Não há cadastro. No site publicado na Vercel, usamos Vercel Web Analytics para contar visitas e visualizações, sem enviar suas respostas.</p><p>Outras pessoas que usam este navegador podem ver o registro. Para removê-lo, use o botão abaixo ou limpe os dados do navegador.</p><p>A hospedagem pode registrar acessos ao site, sem as respostas.${persistent ? '' : ' O salvamento está bloqueado; as respostas duram só enquanto esta página estiver aberta.'}</p><button class="button danger" data-action="confirm-clear">Apagar respostas dos três testes</button>`);
   }
   function advance(current) {
     const { quiz, index, view } = current;

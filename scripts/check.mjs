@@ -34,10 +34,23 @@ for (const quiz of quizzes) {
 assert.ok(quizzes[1].extra);
 new Script(await readFile(new URL('app.js', root), 'utf8'));
 const html = await readFile(new URL('index.html', root), 'utf8');
-assert.match(html, /connect-src 'none'/);
+assert.match(html, /connect-src 'self'/);
+assert.match(html, /src="\.\/analytics\.js" defer/);
 assert.match(html, /lang="pt-BR"/);
 assert.doesNotMatch(html, /(?:src|href)="https?:\/\//);
 const js = await readFile(new URL('app.js', root), 'utf8');
 assert.doesNotMatch(js, /\b(?:fetch|XMLHttpRequest|WebSocket|sendBeacon)\b/);
+const analytics = await readFile(new URL('analytics.js', root), 'utf8');
+new Script(analytics);
+assert.doesNotMatch(analytics, /\b(?:localStorage|sessionStorage|QUIZZES)\b/);
+const analyticsContext = createContext({
+  window: {}, URL,
+  location: { hostname: 'brasilemjogo-teste.vercel.app' },
+  document: { createElement: () => ({}), head: { appendChild() {} } }
+});
+new Script(analytics).runInContext(analyticsContext);
+const filterEvent = analyticsContext.window.vaq[0][1];
+assert.equal(filterEvent({type:'pageview', url:'https://brasilemjogo-teste.vercel.app/?private=1#mulheres/resultado'}).url, 'https://brasilemjogo-teste.vercel.app/');
+assert.equal(filterEvent({type:'event', url:'https://brasilemjogo-teste.vercel.app/'}), null);
 for (const file of ['styles.css', 'assets/favicon.svg', 'assets/icons.svg', '.nojekyll']) await readFile(new URL(file, root));
 console.log('OK: 3 testes, 32 perguntas + 1 extra, fontes, sintaxe, caminhos e ausência de envio de respostas.');
