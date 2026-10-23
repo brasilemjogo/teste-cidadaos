@@ -64,7 +64,7 @@ window.QUIZ_CONTEXT = {
       {
         "title": "Remédio, escola e saúde mais baratos",
         "paragraphs": [
-          "O Flávio defende rever essas exceções para baixar o imposto geral."
+          "O Flávio defende rever essas exceções."
         ],
         "sources": [
           {
@@ -153,7 +153,7 @@ window.QUIZ_CONTEXT = {
       {
         "title": "Imposto de renda zero até R$ 5 mil",
         "paragraphs": [
-          "O governo Lula enviou a proposta, que cumpre uma promessa de campanha. Ela vale desde 2026: quem ganha até R$ 5 mil por mês não paga, e quem ganha até R$ 7.350 paga menos. Quem ganha mais de R$ 600 mil por ano passa a pagar um imposto mínimo. O Senado aprovou por unanimidade, então não há voto contra do Flávio."
+          "O governo Lula enviou a proposta, que cumpre uma promessa de campanha. Ela vale desde 2026: quem ganha até R$ 5 mil por mês não paga, e quem ganha até R$ 7.350 paga menos. Quem ganha mais de R$ 600 mil por ano passa a pagar um imposto mínimo."
         ],
         "sources": [
           {
@@ -197,7 +197,7 @@ window.QUIZ_CONTEXT = {
       {
         "title": "Imposto de renda zero até R$ 5 mil",
         "paragraphs": [
-          "O governo Lula enviou a proposta, que cumpre uma promessa de campanha. Ela vale desde 2026: quem ganha até R$ 5 mil por mês não paga, e quem ganha até R$ 7.350 paga menos. Quem ganha mais de R$ 600 mil por ano passa a pagar um imposto mínimo. O Senado aprovou por unanimidade, então não há voto contra do Flávio."
+          "O governo Lula enviou a proposta, que cumpre uma promessa de campanha. Ela vale desde 2026: quem ganha até R$ 5 mil por mês não paga, e quem ganha até R$ 7.350 paga menos. Quem ganha mais de R$ 600 mil por ano passa a pagar um imposto mínimo."
         ],
         "sources": [
           {
@@ -596,7 +596,7 @@ window.QUIZ_CONTEXT = {
       {
         "title": "Creche pública e vale-creche",
         "paragraphs": [
-          "A pergunta compara a ampliação da rede pública com o uso de um vale para pagar uma vaga particular. O plano de Flávio apresentado ao TSE prevê ampliar as creches e usar o vale temporariamente onde faltar vaga pública, até que ela seja oferecida. Portanto, a proposta reúne as duas medidas."
+          "A pergunta compara a ampliação da rede pública com o uso de um vale para pagar uma vaga particular. O plano de Flávio apresentado ao TSE prevê usar o vale onde faltar vaga pública, o que redirecionaria o recurso público para que donos de creche lucrem com o cuidado das crianças."
         ],
         "sources": [
           {
@@ -681,7 +681,7 @@ window.QUIZ_CONTEXT = {
         "title": "Armas e violência doméstica",
         "paragraphs": [
           "A Lei Maria da Penha permite que a Justiça suspenda a posse ou restrinja o porte de armas como medida de proteção, inclusive no caso de agentes de segurança. É uma medida para reduzir o risco à vítima enquanto o caso é analisado.",
-          "Segundo reportagem do Brasil de Fato, Flávio se manifestou contra uma proposta estadual sobre o tema em 2009, alegando presunção de inocência. A votação foi simbólica: esse registro não deve ser apresentado como um voto nominal."
+          "Flávio se manifestou contra uma proposta estadual sobre o tema em 2009, alegando presunção de inocência."
         ],
         "sources": [
           {
@@ -711,7 +711,7 @@ window.QUIZ_CONTEXT = {
       {
         "title": "Cartões-postais e turismo sexual",
         "paragraphs": [
-          "Segundo reportagem do Brasil de Fato, a Alerj aprovou em 2006, por 37 votos a 1, multas para estabelecimentos que vendessem cartões-postais associando mulheres seminuas a pontos turísticos. Flávio foi o único voto contrário. A medida tratava da associação da imagem do estado ao turismo sexual."
+          "A Alerj aprovou em 2006, por 37 votos a 1, multas para estabelecimentos que vendessem cartões-postais associando mulheres seminuas a pontos turísticos. Flávio foi o único voto contrário. A medida tratava da associação da imagem do estado ao turismo sexual. Em plenário, declarou que a “mulher brasileira também é um patrimônio turístico do nosso país, é uma beleza do nosso Estado, principalmente a mulher carioca”. Também argumentou que os comerciantes não deveriam ser responsabilizados pela venda desse material."
         ],
         "sources": [
           {
