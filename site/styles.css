@@ -96,3 +96,45 @@ dialog{border:1px solid #cbd3c6;border-radius:18px;padding:36px;color:#173b2c;ba
   line-height: 1.3;
   margin: 0 0 16px;
 }
+/* Separate, static context for the complementary ammunition question. */
+.extra-review{margin-top:32px;padding:28px;border:2px solid #a02c3d;border-top:7px solid #e3384e;border-radius:16px;background:radial-gradient(ellipse at top right,#40121e 0,transparent 55%),#121013;color:#f6edef;box-shadow:0 10px 30px #5c10221a}
+.extra-review-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.extra-badge{display:inline-block;padding:7px 12px;border-radius:6px;background:#b81f35;color:#fff5f6;font-size:16px;font-weight:800;letter-spacing:.5px;text-transform:uppercase}
+.extra-motif{display:flex;align-items:center;gap:3px;flex-shrink:0;color:#eee2e5}.extra-motif .icon{width:48px;height:56px}.extra-motif .icon:last-child{width:32px;height:42px;color:#ff5267}
+.extra-review h2{font-size:28px;line-height:1.25;letter-spacing:-.4px;margin:0 0 20px;max-width:650px}
+.extra-answer-row{display:flex;align-items:center;flex-wrap:wrap;gap:14px 24px;font-size:18px}
+.extra-answer-row>span{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.extra-answer-row>a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:3px}
+.extra-count-note{font-size:16px;line-height:1.5;margin:12px 0 24px;color:#cbbac0}
+.extra-explanation{border-top:1px solid #68323d;padding-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px}
+.extra-explanation-part{min-width:0}
+.extra-explanation-part h3{color:#ff9caa;font-size:21px;line-height:1.3;letter-spacing:-.2px;margin:0 0 10px}
+.extra-explanation-part p{font-size:18px;line-height:1.6;margin:0 0 12px}
+.extra-review .consultation-link{display:block;font-size:16px;line-height:1.5;margin-top:10px;overflow-wrap:anywhere;text-underline-offset:3px}
+.extra-updated{font-size:16px;line-height:1.5;color:#cbbac0;margin:24px 0 0}
+@media(max-width:700px){.extra-review{padding:20px;margin-top:26px}.extra-review h2{font-size:25px}.extra-explanation{grid-template-columns:1fr;gap:26px}.extra-badge{font-size:16px}}
+
+.extra-review a{color:#ffc5ce}.extra-review a:focus-visible{outline-color:#ff8d9e}.extra-answer-row .review-answer{background:#42121b;border:1px solid #a53443;color:#fff4f5}
+
+/* The complementary answer screen shares the dark ammunition card identity. */
+.extra-question{--accent:#e3384e;--dark:#fff3f5;--light:#38121c;--border:#68323d;padding:26px;border:2px solid #a02c3d;border-top:7px solid #e3384e;border-radius:16px;background:radial-gradient(ellipse at top right,#40121e 0,transparent 55%),#121013;color:#f6edef;box-shadow:0 10px 30px #5c10221a}
+.extra-question .question-top .eyebrow{color:#ffb1bd}
+.extra-question .question-progress,.extra-question .extra-context,.extra-question .question-hints>span,.extra-question .local-note{color:#d2bfc5}
+.extra-question .question-body{margin-top:20px}
+.extra-question-art{justify-content:flex-end;margin-bottom:12px}
+.extra-question-art .icon{width:38px;height:44px}
+.extra-question-art .icon:last-child{width:27px;height:36px}
+.extra-question .answer-option{background:#21181d;border-color:#82505a;color:#fff3f5;padding:18px;gap:16px}
+.extra-question .answer-option:hover{border-color:#ff8a9d;background:#2c1921}
+.extra-question .answer-option:has(input:checked){background:#431824;border-color:#ff8a9d;padding:17px}
+.extra-question .answer-icon{display:none}
+.extra-question .answer-copy{min-width:0;font-size:18px;line-height:1.55}
+.extra-question .answer-option strong{display:inline;font-size:18px;line-height:inherit}
+.extra-question .answer-detail{font-size:18px}
+.extra-question .radio-mark{border-color:#c6a6af}
+.extra-question .answer-option:has(input:checked) .radio-mark{border-color:#ff8a9d;background:#21181d}
+.extra-question .primary{background:#bb2138;color:#fff5f6}
+.extra-question .primary:disabled{background:#38252c;color:#c6b4bb;border-color:#70414e}
+.extra-question .skip-question,.extra-question .return-result{color:#ffc5ce}
+.extra-question a:focus-visible,.extra-question button:focus-visible,.extra-question .answer-option:has(input:focus-visible){outline-color:#ff8d9e}
+@media(max-width:700px){.extra-question{padding:20px 16px}.extra-question .question-top{gap:4px 14px}.extra-question .question-top .eyebrow{font-size:14px}.extra-question .question-progress{margin-top:14px}.extra-question .question-hints{flex-direction:column;align-items:flex-start;gap:0}.extra-question .question-hints>span{max-width:none;text-align:left}.extra-question .question-navigation{flex-wrap:wrap}.extra-question .question-navigation .button{flex:1;min-width:160px}.extra-question .answer-option{padding:16px}.extra-question .answer-option:has(input:checked){padding:15px}}

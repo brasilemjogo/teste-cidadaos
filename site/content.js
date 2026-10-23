@@ -225,6 +225,45 @@ window.QUIZZES = [
       "label": "Identificação das munições · Estatuto do Desarmamento, art. 23",
       "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm"
     },
+    extraExplanation: {
+      "checkedAt": "23/10/2026",
+      "sections": [
+        {
+          "title": "O que é o “RG” da munição?",
+          "text": "É a marcação que permite identificar o lote e o comprador. O art. 23 do Estatuto do Desarmamento exige essa identificação na base do cartucho para órgãos do art. 6º, como as polícias. Ela ajuda a rastrear se uma munição comprada pelo governo foi utilizada em um crime, ou por alguma organização criminosa.",
+          "sources": [
+            {
+              "label": "Regra atual · Estatuto do Desarmamento, art. 23, §§ 1º e 2º",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm"
+            }
+          ]
+        },
+        {
+          "title": "O que a proposta mudaria?",
+          "text": "O texto do PL 3.723/2019, apresentado pelo governo Jair Bolsonaro, revoga o art. 23, retirando essa exigência legal. Na consulta de 23/10/2026, o projeto ainda tramitava no Senado: essa mudança não estava em vigor.",
+          "sources": [
+            {
+              "label": "Texto e tramitação · PL 3.723/2019 no Senado",
+              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/140042"
+            }
+          ]
+        },
+        {
+          "title": "Por que Flávio entrou na polêmica?",
+          "text": "Segundo a cobertura do Poder360, Flávio Bolsonaro foi questionado na TV Globo, em outubro de 2026, sobre a retirada da marcação e chamou o assunto de “detalhezinho”. Seu apoio ao projeto foi confirmado por Rogério Marinho, coordenador de sua campanha, em entrevista à GloboNews.",
+          "sources": [
+            {
+              "label": "Entrevista de Flávio · Poder360, com vídeo",
+              "url": "https://www.poder360.com.br/poder-eleicoes-2026/flavio-chama-rastreamento-de-municoes-de-detalhezinho/"
+            },
+            {
+              "label": "Declaração de Rogério Marinho · VEJA",
+              "url": "https://veja.abril.com.br/politica/a-justificativa-do-coordenador-de-campanha-de-flavio-bolsonaro-para-apoiar-tirar-identificacao-de-municoes/"
+            }
+          ]
+        }
+      ]
+    },
     comparison: [
       {
         "name": "Lula",
