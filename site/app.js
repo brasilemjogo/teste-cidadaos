@@ -72,8 +72,42 @@
       return `<a class="quiz-card theme-${quiz.theme}" href="#${done ? `${quiz.id}/resultado` : quiz.id}"><div class="card-top"><span class="card-time">${icon('clock')}${quiz.time}</span></div>${artwork(quiz)}<div class="card-content"><h3>${quiz.title}</h3><p>${quiz.description}</p><div class="card-bottom"><span>${status}</span><span class="circle-arrow">${icon('arrow')}</span></div></div></a>`;
     }).join('')}</section>`;
   }
+  const contextCopy = text => String(text).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
+  const contextData = quiz => window.QUIZ_CONTEXT?.[quiz.id];
+  function contextSources(sources) {
+    return sources.map(source => `<a class="context-source" href="${contextCopy(source.url)}" target="_blank" rel="noopener noreferrer">${contextCopy(source.label)}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a>`).join('');
+  }
+  function contextBox(quiz) {
+    const content = contextData(quiz)?.context;
+    if (!content) return '';
+    return `<aside class="topic-context" aria-label="Contexto sobre o tema"><details><summary><span><strong>Um pouco de contexto</strong><span class="context-preview">${contextCopy(content.lead)}</span>${content.caption ? `<span class="context-caption">${contextCopy(content.caption)}</span>` : ''}</span><span class="context-disclosure" aria-hidden="true"></span></summary><div class="context-body">${content.paragraphs.map(paragraph => `<p>${contextCopy(paragraph)}</p>`).join('')}<div class="context-sources">${contextSources(content.sources)}</div></div></details></aside>`;
+  }
+  function contextDetail(point, label = 'O que está por trás') {
+    if (!point) return '';
+    return `<details class="behind-point"><summary><span><strong>${contextCopy(label)}</strong><span class="behind-topic">${contextCopy(point.title)}</span></span><span class="context-disclosure" aria-hidden="true"></span></summary><div class="context-body">${point.status ? `<span class="context-status">${contextCopy(point.status)}</span>` : ''}${point.paragraphs.map(paragraph => `<p>${contextCopy(paragraph)}</p>`).join('')}<div class="context-sources" aria-label="Fontes da explicação">${contextSources(point.sources)}</div></div></details>`;
+  }
+  function behindPoint(quiz, index) {
+    return contextDetail(contextData(quiz)?.questions[index]);
+  }
+  function extraBehindPoint(quiz) {
+    return contextDetail(contextData(quiz)?.extra);
+  }
+  function caseHighlight(quiz) {
+    const content = contextData(quiz)?.highlight;
+    if (!content) return '';
+    return `<section class="case-highlight" aria-labelledby="case-highlight-heading"><h3 id="case-highlight-heading">${contextCopy(content.title)}</h3><div class="case-highlight-grid">${content.cases.map(record => {
+      let text = contextCopy(record.text);
+      for (const phrase of record.emphasis) text = text.replace(contextCopy(phrase), `<strong>${contextCopy(phrase)}</strong>`);
+      return `<article class="case-record"><h4>${contextCopy(record.label)}</h4><p>${text}</p><div class="case-sources">${contextSources(record.sources)}</div></article>`;
+    }).join('')}</div></section>`;
+  }
+  function moreContext(quiz) {
+    const content = contextData(quiz);
+    if (quiz.id === 'seguranca' || !content || (!content.more.length && !content.overview.length)) return '';
+    return `<section class="more-context" aria-labelledby="more-context-heading"><h2 id="more-context-heading">O que está por trás</h2><p class="context-intro">Explore os pontos que quiser. Toque para abrir cada explicação e suas fontes.</p>${content.overview.map(point => contextDetail(point, 'Contexto da votação')).join('')}${content.more.map(point => contextDetail(point, 'Mais sobre o tema')).join('')}</section>`;
+  }
   function intro(quiz) {
-    return `<div class="quiz-shell theme-${quiz.theme}"><a class="back-link" href="#">${icon('back')}Todos os testes</a><section class="intro-panel"><div class="intro-visual"><span class="eyebrow">${quiz.questions.length} PERGUNTAS${quiz.extra ? ' + EXTRA' : ''}</span>${artwork(quiz)}<h1>${quiz.title}</h1></div><div class="intro-content"><p>${quiz.intro}</p><div class="rules"><p>Escolha “sou a favor” ou “sou contra”. Ao final, confira suas respostas e informações sobre o tema.</p></div><button class="button primary" data-action="start">${count(quiz) ? 'Continuar meu teste' : 'Começar o teste'}${icon('arrow')}</button>${storageNote()}</div></section></div>`;
+    return `<div class="quiz-shell theme-${quiz.theme}"><a class="back-link" href="#">${icon('back')}Todos os testes</a><section class="intro-panel"><div class="intro-visual"><span class="eyebrow">${quiz.questions.length} PERGUNTAS${quiz.extra ? ' + EXTRA' : ''}</span>${artwork(quiz)}<h1>${quiz.title}</h1></div><div class="intro-content"><p>${quiz.intro}</p>${contextBox(quiz)}<div class="rules"><p>Escolha “sou a favor” ou “sou contra”. Ao final, confira suas respostas e informações sobre o tema.</p></div><button class="button primary" data-action="start">${count(quiz) ? 'Continuar meu teste' : 'Começar o teste'}${icon('arrow')}</button>${storageNote()}</div></section></div>`;
   }
   function question(quiz, index, extra = false) {
     const value = extra ? state[quiz.id].extra : state[quiz.id].answers[index];
@@ -100,12 +134,13 @@
       <h2 id="extra-review-heading">${quiz.extra}</h2>
       <div class="extra-answer-row"><span>Sua resposta: <strong class="review-answer">${labels[state[quiz.id].extra]}</strong></span><a href="#${quiz.id}/extra" aria-label="Alterar resposta da questão extra">Alterar</a></div>
       <p class="extra-count-note">Esta pergunta é complementar e não entra na contagem principal.</p>
+      ${caseHighlight(quiz)}
       <div class="extra-explanation">${explanation.sections.map(section => `<div class="extra-explanation-part"><h3>${section.title}</h3><p>${section.text}</p>${section.sources.map(consultationLink).join('')}</div>`).join('')}</div>
-      <p class="extra-updated">Fontes consultadas em ${explanation.checkedAt}.</p>
+      ${extraBehindPoint(quiz)}<p class="extra-updated">Fontes consultadas em ${explanation.checkedAt}.</p>
     </section>`;
   }
   function review(quiz) {
-    return `<section class="answer-review"><h2>Suas respostas</h2><ol>${quiz.questions.map((text, index) => `<li><div class="review-number">${String(index + 1).padStart(2, '0')}</div><div class="review-content"><p>${text}</p><div><span class="review-answer">${labels[state[quiz.id].answers[index]]}</span><a href="#${quiz.id}/pergunta/${index + 1}" aria-label="Alterar resposta da pergunta ${index + 1}">Alterar</a></div>${questionContext(quiz.questionSources[index])}${consultationLink(quiz.questionSources[index])}</div></li>`).join('')}</ol></section>${extraReview(quiz)}`;
+    return `<section class="answer-review"><h2>Suas respostas</h2><ol>${quiz.questions.map((text, index) => `<li><div class="review-number">${String(index + 1).padStart(2, '0')}</div><div class="review-content"><p>${text}</p><div><span class="review-answer">${labels[state[quiz.id].answers[index]]}</span><a href="#${quiz.id}/pergunta/${index + 1}" aria-label="Alterar resposta da pergunta ${index + 1}">Alterar</a></div>${questionContext(quiz.questionSources[index])}${consultationLink(quiz.questionSources[index])}${behindPoint(quiz, index)}</div></li>`).join('')}</ol></section>${extraReview(quiz)}`;
   }
   function resultSummary(quiz) {
     const answers = state[quiz.id].answers;
@@ -206,27 +241,9 @@ function result(quiz) {
       </section>
 
       ${comparison(quiz)}
+      ${moreContext(quiz)}
 
-      <div class="result-actions">
-        <a class="button primary" href="#">
-          Escolher outro teste${icon('arrow')}
-        </a>
-
-        <button class="button secondary" data-action="copy-link">
-          ${icon('link')}Copiar link do teste
-        </button>
-
-        <button class="text-button" data-action="reset">
-          Apagar e refazer
-        </button>
-      </div>
-
-      <p class="share-note">
-        O link abre apenas o teste, sem suas respostas.
-      </p>
-
-      ${storageNote()}
-    </div>
+</div>
   `;
 }
   function route() {
@@ -250,7 +267,7 @@ function result(quiz) {
       const canonical = current.view === 'question' ? `${current.quiz.id}/pergunta/${current.index + 1}` : current.view === 'extra' ? `${current.quiz.id}/extra` : current.view === 'result' ? `${current.quiz.id}/resultado` : current.quiz.id;
       if (location.hash !== `#${canonical}`) history.replaceState(null, '', `#${canonical}`);
     }
-    document.body.className = current.quiz ? `theme-${current.quiz.theme}` : '';
+    document.body.className = current.quiz ? `theme-${current.quiz.theme}${current.view === 'result' ? ' result-page' : ''}` : '';
     main.innerHTML = current.view === 'home' ? home() : current.view === 'intro' ? intro(current.quiz) : current.view === 'result' ? result(current.quiz) : question(current.quiz, current.index, current.view === 'extra');
     document.title = current.quiz ? `${current.quiz.title} · Brasil em jogo` : 'Brasil em jogo · Faça o teste';
     document.querySelector('meta[name="theme-color"]').content = current.quiz?.theme === 'women' ? '#4b2380' : current.quiz?.theme === 'safety' ? '#171717' : '#124731';

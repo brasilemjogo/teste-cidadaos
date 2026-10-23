@@ -12,7 +12,9 @@ window.QUIZZES = [
       'Remédios, escola e tratamento de saúde deveriam pagar menos imposto que o resto?',
       'Você acha que cigarro, bebida alcoólica e refrigerante deveriam pagar um imposto extra, por fazerem mal à saúde?',
       'Hoje quem tem carro paga IPVA, mas quem tem jatinho ou iate não paga. Você acha que eles também deveriam pagar?',
-      'Os estados vivem numa briga, dando desconto de imposto para roubar empresas uns dos outros. Você acha que essa briga deveria acabar?'
+      'Os estados vivem numa briga, dando desconto de imposto para roubar empresas uns dos outros. Você acha que essa briga deveria acabar?',
+      'A reforma tributária deveria entrar em vigor como foi aprovada, sem ser suspensa nem revogada?',
+      'Quem ganha até R$ 5 mil por mês deveria ficar sem pagar Imposto de Renda, com um imposto mínimo para quem ganha mais de R$ 50 mil por mês?'
     ],
     questionSources: [
       {
