@@ -81,3 +81,11 @@ dialog{border:1px solid #cbd3c6;border-radius:18px;padding:36px;color:#173b2c;ba
   .result-copy>h1,.result-copy>p{grid-column:1/-1;margin:0}
   .result-hero .result-score{margin:0}
 }
+
+/* Result states use the same colors across all quiz themes. */
+.result-hero.result-favorable{background:#e7f0e5;border-color:#c0d7c0;color:#173b2c}
+.result-hero.result-against{background:#fbecee;border-color:#e8b8be;color:#702530}
+.result-hero.result-against .result-symbol{background:#c52c3e;border-color:#e99ca7;box-shadow:0 8px 0 #8a12201a}
+.result-hero.result-neutral{background:#eff0f1;border-color:#cbd0d4;color:#3f474d}
+.result-hero.result-neutral .result-symbol{background:#e0e3e6;border-color:#c6cbd0;box-shadow:0 8px 0 #4b55631a}
+.result-hero.result-neutral .result-symbol .icon{color:#6b7280}

@@ -103,26 +103,30 @@
     const skipped = answers.filter(answer => answer === 'skip').length;
     const description = 'Reveja suas respostas e consulte as fontes.';
     if (favorable > total / 2) return {
-      heading: 'Sua opinião é favorável a essas afirmações - VOTE 13',
+      heading: 'Sua opinião é favorável a essas afirmações',
+      tone: 'favorable', symbol: 'check',
       score: `${favorable}/${total} a favor`, description
     };
     if (against > total / 2) return {
-      heading: 'Sua opinião é contrária a essas afirmações - VOTE 22',
+      heading: 'Sua opinião é contrária a essas afirmações',
+      tone: 'against', symbol: 'cross',
       score: `${against}/${total} contra`, description
     };
     if (skipped > total / 2) return {
       heading: 'Você ainda está indeciso sobre vários temas!',
+      tone: 'neutral', symbol: 'question',
       score: `${skipped}/${total} sem resposta`,
       description: 'Pesquise sobre os temas nas fontes abaixo.'
     };
     return {
       heading: 'Suas respostas não indicam uma maioria',
+      tone: 'neutral', symbol: 'question',
       score: `${favorable} a favor · ${against} contra · ${skipped} sem resposta`, description
     };
   }
   function result(quiz) {
     const summary = resultSummary(quiz);
-    return `<div class="result-shell theme-${quiz.theme}"><div class="result-top"><a class="back-link" href="#">${icon('back')}Todos os testes</a><span class="eyebrow">${quiz.title}</span></div><section class="result-hero"><div class="result-copy"><span class="eyebrow">TESTE CONCLUÍDO</span><h1>${summary.heading}</h1><p class="result-score">${summary.score}</p><p>${summary.description}</p></div><div class="result-symbol" aria-hidden="true">${icon('check')}</div></section>${review(quiz)}<section class="reading-section"><div class="reading-heading"><h2>Entenda o tema</h2></div><div class="reading-grid">${quiz.notes.map(note => `<article class="reading-card"><span class="eyebrow">${note.label}</span><h3>${note.title}</h3><p>${note.text}</p><a href="${note.url}" target="_blank" rel="noopener noreferrer">${note.source}<span aria-hidden="true">↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note">Fontes consultadas em 22/10/2026. As perguntas mantêm a redação do material original, inclusive seus exemplos e referências de época. Normas e tramitações podem mudar.</p></section>${comparison(quiz)}<div class="result-actions"><a class="button primary" href="#">Escolher outro teste${icon('arrow')}</a><button class="button secondary" data-action="copy-link">${icon('link')}Copiar link do teste</button><button class="text-button" data-action="reset">Apagar e refazer</button></div><p class="share-note">O link abre apenas o teste, sem suas respostas.</p>${storageNote()}</div>`;
+    return `<div class="result-shell theme-${quiz.theme}"><div class="result-top"><a class="back-link" href="#">${icon('back')}Todos os testes</a><span class="eyebrow">${quiz.title}</span></div><section class="result-hero result-${summary.tone}"><div class="result-copy"><span class="eyebrow">TESTE CONCLUÍDO</span><h1>${summary.heading}</h1><p class="result-score">${summary.score}</p><p>${summary.description}</p></div><div class="result-symbol" aria-hidden="true">${icon(summary.symbol)}</div></section>${review(quiz)}<section class="reading-section"><div class="reading-heading"><h2>Entenda o tema</h2></div><div class="reading-grid">${quiz.notes.map(note => `<article class="reading-card"><span class="eyebrow">${note.label}</span><h3>${note.title}</h3><p>${note.text}</p><a href="${note.url}" target="_blank" rel="noopener noreferrer">${note.source}<span aria-hidden="true">↗</span><span class="sr-only"> (abre em outra aba)</span></a></article>`).join('')}</div><p class="source-note">Fontes consultadas em 22/10/2026. As perguntas mantêm a redação do material original, inclusive seus exemplos e referências de época. Normas e tramitações podem mudar.</p></section>${comparison(quiz)}<div class="result-actions"><a class="button primary" href="#">Escolher outro teste${icon('arrow')}</a><button class="button secondary" data-action="copy-link">${icon('link')}Copiar link do teste</button><button class="text-button" data-action="reset">Apagar e refazer</button></div><p class="share-note">O link abre apenas o teste, sem suas respostas.</p>${storageNote()}</div>`;
   }
   function route() {
     const [id, view, position] = location.hash.slice(1).split('/');
