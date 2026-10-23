@@ -127,7 +127,13 @@
   }
 function result(quiz) {
   const summary = resultSummary(quiz);
-  const subtitle = 'Seu texto adicional aqui';
+
+  const subtitle =
+    summary.tone === 'favorable'
+      ? 'Maioria a favor'
+      : summary.tone === 'against'
+        ? 'Maioria contra'
+        : 'Sem maioria a favor ou contra';
 
   return `
     <div class="result-shell theme-${quiz.theme}">
@@ -141,8 +147,12 @@ function result(quiz) {
       <section class="result-hero result-${summary.tone}">
         <div class="result-copy">
           <span class="eyebrow">TESTE CONCLUÍDO</span>
+
+          <p class="result-subtitle">
+            <strong>${subtitle}</strong>
+          </p>
+
           <h1>${summary.heading}</h1>
-          <p class="result-subtitle">${subtitle}</p>
           <p class="result-score">${summary.score}</p>
           <p>${summary.description}</p>
         </div>
@@ -165,6 +175,7 @@ function result(quiz) {
               <span class="eyebrow">${note.label}</span>
               <h3>${note.title}</h3>
               <p>${note.text}</p>
+
               <a
                 href="${note.url}"
                 target="_blank"
@@ -191,9 +202,11 @@ function result(quiz) {
         <a class="button primary" href="#">
           Escolher outro teste${icon('arrow')}
         </a>
+
         <button class="button secondary" data-action="copy-link">
           ${icon('link')}Copiar link do teste
         </button>
+
         <button class="text-button" data-action="reset">
           Apagar e refazer
         </button>
