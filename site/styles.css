@@ -191,3 +191,7 @@ details[open]>summary .context-disclosure:before{content:'−'}
 .answer-review .review-answer,.extra-review .review-answer{font-size:18px}
 
 strong.candidate-name{font-weight:800}
+
+.brand-mark{padding:0;letter-spacing:normal;flex-shrink:0}.brand-mark img{display:block;width:32px;height:auto}@media(max-width:700px){.brand-mark img{width:27px}}
+
+.brand-mark{background:#009739}
