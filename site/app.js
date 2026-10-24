@@ -58,6 +58,10 @@
     const attrs = 'class="artwork" viewBox="0 0 240 160" aria-hidden="true"';
     if (quiz.theme === 'tax') return `<svg ${attrs}><circle cx="156" cy="72" r="66" fill="#ffda32"/><path d="M24 136h196" stroke="#124731" stroke-width="2"/><g fill="#fff5b6" stroke="#124731" stroke-width="3"><path d="M35 93v30c0 15 77 15 77 0V93"/><ellipse cx="73.5" cy="93" rx="38.5" ry="11"/><path d="M35 105c0 15 77 15 77 0m-77 12c0 15 77 15 77 0" fill="none"/></g><g transform="rotate(-17 143 80)"><rect x="100" y="42" width="85" height="62" rx="8" fill="#13864b" stroke="#124731" stroke-width="3"/><circle cx="142" cy="73" r="19" fill="#ffda32"/><path d="M145 60c-18 1-18 13-3 13s14 14-4 13m4-29v33" fill="none" stroke="#124731" stroke-width="3" stroke-linecap="round"/></g><path d="m47 38 6 7-6 7-6-7zm150 67 6 7-6 7-6-7z" fill="#124731"/></svg>`;
     if (quiz.theme === 'safety') return `<svg ${attrs}><circle cx="150" cy="80" r="68" fill="#d63040"/><path d="m48 54 59-25 59 25v39c0 30-59 51-59 51S48 123 48 93z" fill="#f3f0e7" stroke="#161616" stroke-width="4"/><path d="m78 85 20 20 38-44" fill="none" stroke="#bd1629" stroke-width="10"/><path d="m170 40 15-15m-7 42h23m-31 43 17 13" fill="none" stroke="#161616" stroke-width="3"/><path d="M17 147h202" stroke="#161616" stroke-width="2"/></svg>`;
+    if (quiz.theme === 'env') return `<svg ${attrs}><circle cx="154" cy="74" r="66" fill="#8fd3a8"/><circle cx="196" cy="34" r="17" fill="#f4b63d"/><path d="M22 142h200" stroke="#0b4a45" stroke-width="2"/><path d="M98 142v-38m48 38v-26" stroke="#0b4a45" stroke-width="7" stroke-linecap="round"/><path d="M98 30c-26 18-38 40-30 62 7 18 53 18 60 0 8-22-4-44-30-62z" fill="#0f766e" stroke="#0b4a45" stroke-width="4"/><path d="M146 62c-18 12-26 28-20 44 5 13 35 13 40 0 6-16-2-32-20-44z" fill="#e2f2ef" stroke="#0b4a45" stroke-width="4"/><path d="M98 104 84 88m14 2 14-16" fill="none" stroke="#e2f2ef" stroke-width="4" stroke-linecap="round"/><path d="m40 52 6-8 6 8-6 8zm150 70 6-8 6 8-6 8z" fill="#0b4a45"/></svg>`;
+    if (quiz.theme === 'health') return `<svg ${attrs}><circle cx="156" cy="74" r="66" fill="#9cc1f2"/><path d="M22 142h200" stroke="#123e7a" stroke-width="2"/><rect x="62" y="34" width="90" height="90" rx="18" fill="#f5f9ff" stroke="#123e7a" stroke-width="4"/><path d="M107 54v50M82 79h50" stroke="#1d5fb8" stroke-width="14" stroke-linecap="round"/><g transform="rotate(-35 182 112)"><rect x="160" y="100" width="46" height="22" rx="11" fill="#ff7a6b" stroke="#123e7a" stroke-width="3"/><path d="M183 100v22" stroke="#123e7a" stroke-width="3"/></g><path d="m40 40 6-8 6 8-6 8zm164-8 6-8 6 8-6 8z" fill="#123e7a"/></svg>`;
+    if (quiz.theme === 'work') return `<svg ${attrs}><circle cx="156" cy="74" r="66" fill="#ffc58f"/><path d="M22 142h200" stroke="#7c2d12" stroke-width="2"/><rect x="48" y="40" width="146" height="92" rx="12" fill="#fff8f1" stroke="#7c2d12" stroke-width="4"/><path d="M48 62h146" stroke="#7c2d12" stroke-width="4"/><path d="M78 30v20m86-20v20" stroke="#7c2d12" stroke-width="6" stroke-linecap="round"/><g fill="#f1cdb4"><rect x="58" y="74" width="16" height="16" rx="3"/><rect x="78" y="74" width="16" height="16" rx="3"/><rect x="98" y="74" width="16" height="16" rx="3"/><rect x="118" y="74" width="16" height="16" rx="3"/><rect x="138" y="74" width="16" height="16" rx="3"/></g><g fill="#c2410c"><rect x="158" y="74" width="16" height="16" rx="3"/><rect x="178" y="74" width="10" height="16" rx="3"/></g><path d="m64 112 12 10 22-24" fill="none" stroke="#c2410c" stroke-width="6" stroke-linecap="round"/><path d="M110 112h64" stroke="#7c2d12" stroke-width="4" stroke-linecap="round"/></svg>`;
+    if (quiz.theme === 'cost') return `<svg ${attrs}><circle cx="156" cy="74" r="66" fill="#f0d36b"/><path d="M22 142h200" stroke="#4a3800" stroke-width="2"/><path d="M60 64h56v70H60z" fill="#e94b3c" stroke="#4a3800" stroke-width="4" stroke-linejoin="round"/><path d="M60 64c0-14 56-14 56 0" fill="#e94b3c" stroke="#4a3800" stroke-width="4"/><rect x="76" y="34" width="24" height="16" rx="4" fill="#fff8e1" stroke="#4a3800" stroke-width="4"/><path d="M88 50v6m-28 30h56" stroke="#4a3800" stroke-width="4"/><path d="M168 38c-20 0-32 15-32 31 0 12 8 19 12 27v10h40V96c4-8 12-15 12-27 0-16-12-31-32-31z" fill="#fff8e1" stroke="#4a3800" stroke-width="4"/><path d="M152 116h32m-28 10h24" stroke="#4a3800" stroke-width="4" stroke-linecap="round"/><path d="m160 70 8 12 8-12" fill="none" stroke="#7a5d00" stroke-width="4" stroke-linecap="round"/></svg>`;
     return `<svg ${attrs}><circle cx="157" cy="73" r="64" fill="#e94b92"/><circle cx="197" cy="36" r="16" fill="#ffce42"/><path d="M38 144h169" stroke="#4b2380" stroke-width="3"/><circle cx="104" cy="64" r="37" fill="#f8eeff" stroke="#4b2380" stroke-width="6"/><path d="M104 103v39m-18-14h36" stroke="#4b2380" stroke-width="7"/><path d="m80 65 16 15 31-32" fill="none" stroke="#8255c0" stroke-width="6" stroke-linecap="round"/><path d="m38 36 6-8 6 8-6 8zM182 112l6-8 6 8-6 8z" fill="#ffce42"/></svg>`;
   }
   function storageText() {
@@ -120,7 +124,7 @@
     return `<a class="consultation-link" href="${reference.url}" target="_blank" rel="noopener noreferrer">Consultar: ${reference.label}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a>`;
   }
   function comparison(quiz) {
-    return `<section class="comparison-section" aria-labelledby="comparison-heading"><div class="reading-heading"><h2 id="comparison-heading">Lula e Flávio Bolsonaro</h2><p>Medidas e propostas sobre este tema.</p></div><div class="comparison-grid">${quiz.comparison.map(item => `<article class="comparison-card"><span class="eyebrow">${item.status}</span><h3>${item.name}</h3><p>${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a>${(item.sources || []).map(consultationLink).join('')}</article>`).join('')}</div><p class="source-note"> Consulta em 22/10/2026.</p></section>`;
+    return `<section class="comparison-section" aria-labelledby="comparison-heading"><div class="reading-heading"><h2 id="comparison-heading">Lula e Flávio Bolsonaro</h2><p>Medidas e propostas sobre este tema.</p></div><div class="comparison-grid">${quiz.comparison.map(item => `<article class="comparison-card"><span class="eyebrow">${item.status}</span><h3>${item.name}</h3><p>${item.text}</p><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.source}<span aria-hidden="true"> ↗</span><span class="sr-only"> (abre em outra aba)</span></a>${(item.sources || []).map(consultationLink).join('')}</article>`).join('')}</div><p class="source-note"> Consulta em ${quiz.checkedAt || '22/10/2026'}.</p></section>`;
   }
   function questionContext(reference) {
     if (!reference.positions) return '';
@@ -236,7 +240,7 @@ function result(quiz) {
         </div>
 
         <p class="source-note">
-          Fontes consultadas em 22/10/2026. 
+          Fontes consultadas em ${quiz.checkedAt || '22/10/2026'}. 
         </p>
       </section>
 
@@ -294,7 +298,7 @@ function result(quiz) {
     main.innerHTML = current.view === 'home' ? home() : current.view === 'intro' ? intro(current.quiz) : current.view === 'result' ? result(current.quiz) : question(current.quiz, current.index, current.view === 'extra');
     emphasizeCandidateNames(main);
     document.title = current.quiz ? `${current.quiz.title} · Brasil em jogo` : 'Brasil em jogo · Faça o teste';
-    document.querySelector('meta[name="theme-color"]').content = current.quiz?.theme === 'women' ? '#4b2380' : current.quiz?.theme === 'safety' ? '#171717' : '#124731';
+    document.querySelector('meta[name="theme-color"]').content = ({ women: '#4b2380', safety: '#171717', env: '#0b4a45', health: '#123e7a', work: '#7c2d12', cost: '#4a3800' })[current.quiz?.theme] || '#124731';
     window.scrollTo(0, 0);
     main.focus({ preventScroll: true });
   }
@@ -305,7 +309,7 @@ function result(quiz) {
     if (!dialog.open) dialog.showModal();
   }
   function privacy() {
-    showDialog(`<h2 id="dialog-title">Suas respostas ficam aqui.</h2><p>As respostas são salvas só neste navegador e não são enviadas a um servidor. Não há cadastro. No site publicado na Vercel, usamos Vercel Web Analytics para contar visitas e visualizações, sem enviar suas respostas.</p><p>Outras pessoas que usam este navegador podem ver o registro. Para removê-lo, use o botão abaixo ou limpe os dados do navegador.</p><p>A hospedagem pode registrar acessos ao site, sem as respostas.${persistent ? '' : ' O salvamento está bloqueado; as respostas duram só enquanto esta página estiver aberta.'}</p><button class="button danger" data-action="confirm-clear">Apagar respostas dos três testes</button>`);
+    showDialog(`<h2 id="dialog-title">Suas respostas ficam aqui.</h2><p>As respostas são salvas só neste navegador e não são enviadas a um servidor. Não há cadastro. No site publicado na Vercel, usamos Vercel Web Analytics para contar visitas e visualizações, sem enviar suas respostas.</p><p>Outras pessoas que usam este navegador podem ver o registro. Para removê-lo, use o botão abaixo ou limpe os dados do navegador.</p><p>A hospedagem pode registrar acessos ao site, sem as respostas.${persistent ? '' : ' O salvamento está bloqueado; as respostas duram só enquanto esta página estiver aberta.'}</p><button class="button danger" data-action="confirm-clear">Apagar respostas de todos os testes</button>`);
   }
   function advance(current) {
     const { quiz, index, view } = current;
@@ -334,7 +338,7 @@ function result(quiz) {
         state[target.id] = empty(target); save(); dialog.close(); navigate(target.id); toast('Respostas deste teste apagadas.'); break;
       }
       case 'confirm-clear':
-        showDialog('<h2 id="dialog-title">Apagar todas as respostas?</h2><p>Isso apaga o progresso e o registro dos três testes neste navegador.</p><div class="dialog-actions"><button class="button secondary" data-action="close">Cancelar</button><button class="button danger" data-action="do-clear">Apagar tudo</button></div>'); break;
+        showDialog('<h2 id="dialog-title">Apagar todas as respostas?</h2><p>Isso apaga o progresso e o registro de todos os testes neste navegador.</p><div class="dialog-actions"><button class="button secondary" data-action="close">Cancelar</button><button class="button danger" data-action="do-clear">Apagar tudo</button></div>'); break;
       case 'do-clear':
         state = sanitize({});
         try { localStorage.removeItem(storageKey); } catch { /* O estado em memória já foi limpo. */ }

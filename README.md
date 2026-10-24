@@ -7,6 +7,7 @@ Site estático em português, feito para celular e pronto para GitHub Pages. Nã
 - Impostos: as 7 perguntas do material original, em verde e amarelo.
 - Segurança pública: as 8 perguntas principais e a pergunta complementar sobre identificação da munição, em preto e vermelho.
 - Direitos das mulheres: as 6 perguntas do material original, em roxo e rosa.
+- Meio ambiente (7 perguntas), Saúde (8), Trabalho (6) e Custo de vida (8), em `site/content-novos.js` e `site/contextos-novos.js`, com fontes consultadas em 24/10/2026.
 - Resumo inicial, uma pergunta por tela, opção de voltar, pular, continuar depois e revisar as respostas.
 - Página final com o registro das respostas e notas factuais com fontes oficiais. Sem pontuação ou conclusão eleitoral.
 
